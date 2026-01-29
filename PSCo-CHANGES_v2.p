@@ -1,8 +1,8 @@
 /* The change case = C:\Users\317521\WECC 2031-32\32HS2\Pre-run\03_Case-MTC\34HS1a_MTC_v05_04b.sav */
-/* The comparison case = C:\Users\317521\WECC 2031-32\Progress\32HS2_Step01_clean.sav */
-/* Therefore, C:\Users\317521\WECC 2031-32\Progress\32HS2_Step01_clean.sav + EPCL = C:\Users\317521\WECC 2031-32\32HS2\Pre-run\03_Case-MTC\34HS1a_MTC_v05_04b.sav */
+/* The comparison case = C:\Users\317521\WECC 2031-32\Progress\32HS2_Step03_PreExtract_Final.sav */
+/* Therefore, C:\Users\317521\WECC 2031-32\Progress\32HS2_Step03_PreExtract_Final.sav + EPCL = C:\Users\317521\WECC 2031-32\32HS2\Pre-run\03_Case-MTC\34HS1a_MTC_v05_04b.sav */
 
-/* File created using epcl_xtract23c: Wed Jan 28 15:11:19 2026 */
+/* File created using epcl_xtract23c: Wed Jan 28 20:10:19 2026 */
 
 /* Note -- Range restrictions used in comparison process */
 /* Areas:	70 */
@@ -25,11 +25,6 @@ if (@logindx != -1)
 endif
 
 @logindx = number("  70106 CHEROK4       22.00")
-if (@logindx != -1)
-  busd[@logindx].type = 2      /*  0  */
-endif
-
-@logindx = number("  70125 SMOKY_HL_S   115.00")
 if (@logindx != -1)
 endif
 
@@ -72,14 +67,6 @@ endif
 if (@logindx != -1)
 endif
 
-@logindx = number("  70431 PLAINS_NG1   230.00")
-if (@logindx != -1)
-endif
-
-@logindx = number("  70433 PLAINS_NG2   230.00")
-if (@logindx != -1)
-endif
-
 @logindx = number("  70434 TWNLAKES     115.00")
 if (@logindx != -1)
   busd[@logindx].vmax1 = 0      /*  1.1  */
@@ -90,29 +77,9 @@ endif
 if (@logindx != -1)
 endif
 
-@logindx = number("  70440 VALMONT_2    115.00")
-if (@logindx != -1)
-endif
-
-@logindx = number("  70468 SPINDLE_NG   230.00")
-if (@logindx != -1)
-endif
-
-@logindx = number("  70482 COPWRPRO_NG  115.00")
-if (@logindx != -1)
-endif
-
-@logindx = number("  70520 BLUSPRU_GEN  230.00")
-if (@logindx != -1)
-endif
-
 @logindx = number("  70573 HUNTER_S_CR   34.50")
 if (@logindx != -1)
   busd[@logindx].busnam =  "VICTORY_S_CR"      /*  "HUNTER_S_CR"  */
-endif
-
-@logindx = number("  70595 FTNVLY_GENS  230.00")
-if (@logindx != -1)
 endif
 
 @logindx = number("  70600 OXCART        69.00")
@@ -148,11 +115,6 @@ endif
 @logindx = number("  70722 RDGCREST     115.00")
 if (@logindx != -1)
   busd[@logindx].type = 1      /*  0  */
-endif
-
-@logindx = number("  70723 RDGCREST      34.50")
-if (@logindx != -1)
-  busd[@logindx].type = 2      /*  0  */
 endif
 
 @logindx = number("  70750 BRONCO_PLNS  345.00")
@@ -195,10 +157,6 @@ if (@logindx != -1)
 endif
 
 @logindx = number("  70833 CEDARCK2     230.00")
-if (@logindx != -1)
-endif
-
-@logindx = number("  70916 FT_ST_VRAIN  345.00")
 if (@logindx != -1)
 endif
 
@@ -264,59 +222,11 @@ busd[@logindx].vmax = 1.0500
 busd[@logindx].vmin = 0.9500
 busd[@logindx].nown = 700
 
-@logindx = number("  71981 BOONE         13.80")
-if (@logindx != -1)
-endif
-
-@logindx = number("  71982 MALTA_T1      13.80")
-if (@logindx != -1)
-endif
-
-@logindx = number("  71983 MALTA_T2      13.80")
-if (@logindx != -1)
-endif
-
-@logindx = number("  71984 DANIEL_PK     13.80")
-if (@logindx != -1)
-endif
-
-@logindx = number("  71985 BASALT        13.80")
-if (@logindx != -1)
-endif
-
-@logindx = number("  71988 RIFLE_UTE     13.80")
-if (@logindx != -1)
-endif
-
-@logindx = number("  71989 CAMEO         13.80")
-if (@logindx != -1)
-endif
-
-@logindx = number("  71990 SMOKY_HL_T1   13.80")
-if (@logindx != -1)
-endif
-
-@logindx = number("  71991 SMOKY_HL_T2   13.80")
-if (@logindx != -1)
-endif
-
-@logindx = number("  71992 WELD_PS       13.80")
-if (@logindx != -1)
-endif
-
 @logindx = number("  71995 WATERTON      13.80")
 if (@logindx != -1)
 endif
 
 @logindx = number("  71997 MISS_SITE     13.80")
-if (@logindx != -1)
-endif
-
-@logindx = number("  77650 BASALT       115.00")
-if (@logindx != -1)
-endif
-
-@logindx = number("  77656 UTE_GRND_JN  345.00")
 if (@logindx != -1)
 endif
 
@@ -361,546 +271,6 @@ busd[@logindx].zone = 704
 busd[@logindx].vmax = 1.0500
 busd[@logindx].vmin = 0.9500
 busd[@logindx].nown = 65
-
-@logindx = number("  99174 mid point    100.00")
-if (@logindx != -1)
-endif
-
-@logindx = number(" 700001 PI_24_3       18.00")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_2024_3_G3"      /*  "PI_24_3"  */
-endif
-
-@logindx = number(" 700002 PI_24_2_G7    19.00")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_2024_2_G7"      /*  "PI_24_2_G7"  */
-endif
-
-@logindx = number(" 700003 PI_24_2_G8    19.00")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_2024_2_G8"      /*  "PI_24_2_G8"  */
-endif
-
-@logindx = number(" 700009 24_17_S_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_17_S1_1"      /*  "24_17_S_1"  */
-endif
-
-@logindx = number(" 700010 24_17_S       34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_17_S1 "      /*  "24_17_S"  */
-endif
-
-@logindx = number(" 700016 24_15_SB_1   230.00")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_15_SB2 "      /*  "24_15_SB_1"  */
-endif
-
-@logindx = number(" 700017 24_15_SB      34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_15_SB1 "      /*  "24_15_SB"  */
-endif
-
-@logindx = number(" 700018 24_15_S       34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_15_S1 "      /*  "24_15_S"  */
-endif
-
-@logindx = number(" 700019 24_15_B_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_15_B1_1"      /*  "24_15_B_1"  */
-  busd[@logindx].type = 2      /*  1  */
-endif
-
-@logindx = number(" 700020 24_15_B        0.64")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_15_B1 "      /*  "24_15_B"  */
-endif
-
-@logindx = number(" 700036 5RSC_24_9_B    0.63")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "5RSC24_9_B1 "      /*  "5RSC_24_9_B"  */
-endif
-
-@logindx = number(" 700037 24_9_B_1      34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "5R24_9_B1_1 "      /*  "24_9_B_1"  */
-endif
-
-@logindx = number(" 700038 24_9_B_2      34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "5R24_9_B1_2 "      /*  "24_9_B_2"  */
-endif
-
-@logindx = number(" 700039 5RSC_24_9    230.00")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "5RSC_2024_9 "      /*  "5RSC_24_9"  */
-endif
-
-@logindx = number(" 700041 24_14_B_2     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_14_B1_2"      /*  "24_14_B_2"  */
-endif
-
-@logindx = number(" 700042 24_14_B_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_14_B1_1"      /*  "24_14_B_1"  */
-endif
-
-@logindx = number(" 700043 24_14_B        0.64")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_14_B1 "      /*  "24_14_B"  */
-endif
-
-@logindx = number(" 700044 24_7_B         0.90")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_7_B1  "      /*  "24_7_B"  */
-endif
-
-@logindx = number(" 700045 24_7_B_1      34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_7_B1_1 "      /*  "24_7_B_1"  */
-endif
-
-@logindx = number(" 700046 24_7_B_2      34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_7_B1_2 "      /*  "24_7_B_2"  */
-endif
-
-@logindx = number(" 700049 24_16_B_2     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_16_B1_2"      /*  "24_16_B_2"  */
-endif
-
-@logindx = number(" 700050 24_16_B_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_16_B1_1"      /*  "24_16_B_1"  */
-endif
-
-@logindx = number(" 700051 24_16_B        0.64")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_16_B1 "      /*  "24_16_B"  */
-endif
-
-@logindx = number(" 700053 24_10_B_2     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_10_B1_2"      /*  "24_10_B_2"  */
-endif
-
-@logindx = number(" 700054 24_10_B_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_10_B1_1"      /*  "24_10_B_1"  */
-endif
-
-@logindx = number(" 700055 24_10_B        0.66")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_10_B1 "      /*  "24_10_B"  */
-endif
-
-@logindx = number(" 700056 24_13_W2_2    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_13_W2_2"      /*  "24_13_W2_2"  */
-endif
-
-@logindx = number(" 700057 24_13_W2       0.72")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_13_W2 "      /*  "24_13_W2"  */
-endif
-
-@logindx = number(" 700058 24_13_W2_1    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_13_W2_1"      /*  "24_13_W2_1"  */
-endif
-
-@logindx = number(" 700059 24_13_W3_2    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_13_W3_2"      /*  "24_13_W3_2"  */
-endif
-
-@logindx = number(" 700060 24_13_W3       0.72")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_13_W3 "      /*  "24_13_W3"  */
-endif
-
-@logindx = number(" 700061 24_13_W3_1    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_13_W3_1"      /*  "24_13_W3_1"  */
-endif
-
-@logindx = number(" 700062 24_13_W4_2    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_13_W4_2"      /*  "24_13_W4_2"  */
-endif
-
-@logindx = number(" 700063 24_13_W4       0.72")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_13_W4 "      /*  "24_13_W4"  */
-endif
-
-@logindx = number(" 700064 24_13_W4_1    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_13_W4_1"      /*  "24_13_W4_1"  */
-endif
-
-@logindx = number(" 700065 24_13_W1_1    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_13_W1_1"      /*  "24_13_W1_1"  */
-endif
-
-@logindx = number(" 700067 24_13_W1       0.72")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_13_W1 "      /*  "24_13_W1"  */
-endif
-
-@logindx = number(" 700068 24_13_W1_2    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_13_W1_2"      /*  "24_13_W1_2"  */
-endif
-
-@logindx = number(" 700070 24_12_W1_2    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_12_W1_2"      /*  "24_12_W1_2"  */
-endif
-
-@logindx = number(" 700071 24_12_W2_2    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_12_W2_2"      /*  "24_12_W2_2"  */
-endif
-
-@logindx = number(" 700072 24_12_W3_2    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_12_W3_2"      /*  "24_12_W3_2"  */
-endif
-
-@logindx = number(" 700073 24_12_W1_1    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_12_W1_1"      /*  "24_12_W1_1"  */
-endif
-
-@logindx = number(" 700074 24_12_W2_1    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_12_W2_1"      /*  "24_12_W2_1"  */
-endif
-
-@logindx = number(" 700075 24_12_W3_1    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_12_W3_1"      /*  "24_12_W3_1"  */
-endif
-
-@logindx = number(" 700076 24_12_W1       0.72")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_12_W1 "      /*  "24_12_W1"  */
-endif
-
-@logindx = number(" 700077 24_12_W2       0.72")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_12_W2 "      /*  "24_12_W2"  */
-endif
-
-@logindx = number(" 700078 24_12_W3       0.72")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_12_W3 "      /*  "24_12_W3"  */
-endif
-
-@logindx = number(" 700079 24_9_W1        0.72")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_9_W1  "      /*  "24_9_W1"  */
-endif
-
-@logindx = number(" 700080 24_9_W1_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_9_W1_1 "      /*  "24_9_W1_1"  */
-endif
-
-@logindx = number(" 700081 24_9_W1_2     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_9_W1_2 "      /*  "24_9_W1_2"  */
-endif
-
-@logindx = number(" 700082 24_9_W2        0.72")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_9_W2  "      /*  "24_9_W2"  */
-endif
-
-@logindx = number(" 700083 24_9_W2_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_9_W2_1 "      /*  "24_9_W2_1"  */
-endif
-
-@logindx = number(" 700084 24_9_W2_2     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_9_W2_2 "      /*  "24_9_W2_2"  */
-endif
-
-@logindx = number(" 700085 24_9_W3        0.72")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_9_W3  "      /*  "24_9_W3"  */
-endif
-
-@logindx = number(" 700086 24_9_W3_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_9_W3_1 "      /*  "24_9_W3_1"  */
-endif
-
-@logindx = number(" 700087 24_9_W3_2     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_9_W3_2 "      /*  "24_9_W3_2"  */
-endif
-
-@logindx = number(" 700088 24_9_W4        0.72")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_9_W4  "      /*  "24_9_W4"  */
-endif
-
-@logindx = number(" 700089 24_9_W4_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_9_W4_1 "      /*  "24_9_W4_1"  */
-endif
-
-@logindx = number(" 700090 24_9_W4_2     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_9_W4_2 "      /*  "24_9_W4_2"  */
-endif
-
-@logindx = number(" 700101 3RSC_23_1    230.00")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3RSC_2023_1 "      /*  "3RSC_23_1"  */
-endif
-
-@logindx = number(" 700102 3RSC_23_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3R23_1_S1_2 "      /*  "3RSC_23_1"  */
-endif
-
-@logindx = number(" 700103 3RSC_23_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3R23_1_S1_1 "      /*  "3RSC_23_1"  */
-endif
-
-@logindx = number(" 700104 3RSC_23_1      0.66")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3RSC23_1_S1 "      /*  "3RSC_23_1"  */
-endif
-
-@logindx = number(" 700105 3RSC_23_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3R23_1_S2_2 "      /*  "3RSC_23_1"  */
-endif
-
-@logindx = number(" 700106 3RSC_23_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3R23_1_S2_1 "      /*  "3RSC_23_1"  */
-endif
-
-@logindx = number(" 700107 3RSC_23_1      0.66")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3RSC23_1_S2 "      /*  "3RSC_23_1"  */
-endif
-
-@logindx = number(" 700108 3RSC_23_2    230.00")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3RSC_2023_2 "      /*  "3RSC_23_2"  */
-endif
-
-@logindx = number(" 700109 3RSC_23_2     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3R23_2_B1_2 "      /*  "3RSC_23_2"  */
-endif
-
-@logindx = number(" 700110 3RSC_23_2     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3R23_2_B1_1 "      /*  "3RSC_23_2"  */
-endif
-
-@logindx = number(" 700111 3RSC_23_2      0.66")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3RSC23_2_B1 "      /*  "3RSC_23_2"  */
-endif
-
-@logindx = number(" 700112 3RSC_23_3    345.00")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3RSC_2023_3 "      /*  "3RSC_23_3"  */
-endif
-
-@logindx = number(" 700113 3RSC_23_3     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3R23_3_W1_2 "      /*  "3RSC_23_3"  */
-endif
-
-@logindx = number(" 700114 3RSC_23_3     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3R23_3_W1_1 "      /*  "3RSC_23_3"  */
-endif
-
-@logindx = number(" 700115 3RSC_23_3      0.69")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3RSC23_3_W1 "      /*  "3RSC_23_3"  */
-endif
-
-@logindx = number(" 700116 3RSC_23_3     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3R23_3_W3_2 "      /*  "3RSC_23_3"  */
-endif
-
-@logindx = number(" 700117 3RSC_23_3     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3R23_3_W3_1 "      /*  "3RSC_23_3"  */
-endif
-
-@logindx = number(" 700118 3RSC_23_3      0.69")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "3RSC23_3_W3 "      /*  "3RSC_23_3"  */
-endif
-
-@logindx = number(" 700119 21_1_S1        0.66")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "REPL_21_1_S1"      /*  "21_1_S1"  */
-endif
-
-@logindx = number(" 700120 21_1_S2        0.66")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "REPL_21_1_S2"      /*  "21_1_S2"  */
-endif
-
-@logindx = number(" 700121 21_1_S3        0.66")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "REPL_21_1_S3"      /*  "21_1_S3"  */
-endif
-
-@logindx = number(" 700122 21_1_B1        0.69")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "REPL_21_1_B1"      /*  "21_1_B1"  */
-endif
-
-@logindx = number(" 700123 21_1_B2        0.69")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "REPL_21_1_B2"      /*  "21_1_B2"  */
-endif
-
-@logindx = number(" 700124 21_1_B3        0.69")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "REPL_21_1_B3"      /*  "21_1_B3"  */
-endif
-
-@logindx = number(" 700125 21_1_S1_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "RE21_1_S1_1 "      /*  "21_1_S1_1"  */
-endif
-
-@logindx = number(" 700126 21_1_S2_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "RE21_1_S2_1 "      /*  "21_1_S2_1"  */
-endif
-
-@logindx = number(" 700127 21_1_S3_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "RE21_1_S3_1 "      /*  "21_1_S3_1"  */
-endif
-
-@logindx = number(" 700128 21_1_B1_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "RE21_1_B1_1 "      /*  "21_1_B1_1"  */
-endif
-
-@logindx = number(" 700129 21_1_B2_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "RE21_1_B2_1 "      /*  "21_1_B2_1"  */
-endif
-
-@logindx = number(" 700130 21_1_B3_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "RE21_1_B3_1 "      /*  "21_1_B3_1"  */
-endif
-
-@logindx = number(" 700131 21_1_SB1      34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "RE21_1_SB1  "      /*  "21_1_SB1"  */
-endif
-
-@logindx = number(" 700132 21_1_SB2      34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "RE21_1_SB2  "      /*  "21_1_SB2"  */
-endif
-
-@logindx = number(" 700133 21_1_SB3      34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "RE21_1_SB3  "      /*  "21_1_SB3"  */
-endif
-
-@logindx = number(" 700140 20_10_SB12   230.00")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "GI20_10_SB12"      /*  "20_10_SB12"  */
-endif
-
-@logindx = number(" 700141 20_10_SB1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "GI20_10_SB1 "      /*  "20_10_SB1"  */
-endif
-
-@logindx = number(" 700142 20_10_S1       0.63")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "GI_20_10_S1 "      /*  "20_10_S1"  */
-endif
-
-@logindx = number(" 700143 20_10_S1_1    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "GI20_10_S1_1"      /*  "20_10_S1_1"  */
-endif
-
-@logindx = number(" 700144 20_10_B1       0.90")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "GI_20_10_B1 "      /*  "20_10_B1"  */
-endif
-
-@logindx = number(" 700145 20_10_B1_1    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "GI20_10_B1_1"      /*  "20_10_B1_1"  */
-endif
-
-@logindx = number(" 700146 20_10_S2       0.63")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "GI_20_10_S2 "      /*  "20_10_S2"  */
-endif
-
-@logindx = number(" 700147 20_10_B2       0.90")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "GI_20_10_B2 "      /*  "20_10_B2"  */
-endif
-
-@logindx = number(" 700148 20_10_S2_1    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "GI20_10_S2_1"      /*  "20_10_S2_1"  */
-endif
-
-@logindx = number(" 700149 20_10_B2_1    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "GI20_10_B2_1"      /*  "20_10_B2_1"  */
-endif
-
-@logindx = number(" 700150 20_10_SB2     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "GI20_10_SB2 "      /*  "20_10_SB2"  */
-endif
-
-@logindx = number(" 700151 2021_6_S1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "GI_2021_6_S1"      /*  "2021_6_S1"  */
-endif
-
-@logindx = number(" 700152 2021_6_S1_1   34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "GI21_6_S1_1 "      /*  "2021_6_S1_1"  */
-endif
-
-@logindx = number(" 700153 2021_6_S1_2   34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "GI21_6_S1_2 "      /*  "2021_6_S1_2"  */
-endif
-
-@logindx = number(" 700154 2021_6_S1_3  230.00")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "GI21_6_S1_3 "      /*  "2021_6_S1_3"  */
-endif
 
 @logindx = casepar[0].nbus
 @ret=ins("busd", @logindx-1, 1)
@@ -1112,101 +482,6 @@ busd[@logindx].vmax = 1.0500
 busd[@logindx].vmin = 0.9500
 busd[@logindx].nown = 700
 
-@logindx = number(" 700182 24_28_W        0.69")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "5RSC24_28_W1"      /*  "24_28_W"  */
-endif
-
-@logindx = number(" 700183 24_28_W_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "5R24_28_W1_1"      /*  "24_28_W_1"  */
-endif
-
-@logindx = number(" 700184 24_28_W_2     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "5R24_28_W1_2"      /*  "24_28_W_2"  */
-endif
-
-@logindx = number(" 700189 23_2_B1_2     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI23_2_B1_2 "      /*  "23_2_B1_2"  */
-endif
-
-@logindx = number(" 700190 23_2_B1_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI23_2_B1_1 "      /*  "23_2_B1_1"  */
-endif
-
-@logindx = number(" 700191 23_2_B1        0.60")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_23_2_B1  "      /*  "23_2_B1"  */
-endif
-
-@logindx = number(" 700193 24_19_W1_3   345.00")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_19_W1_3"      /*  "24_19_W1_3"  */
-endif
-
-@logindx = number(" 700194 24_19_W1_2    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_19_W1_2"      /*  "24_19_W1_2"  */
-endif
-
-@logindx = number(" 700195 24_19_W1_1    34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI24_19_W1_1"      /*  "24_19_W1_1"  */
-endif
-
-@logindx = number(" 700196 24_19_W1       0.72")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "PI_24_19_W1 "      /*  "24_19_W1"  */
-endif
-
-@logindx = number(" 700209 24_1_S1_2     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "RE24_1_S1_2 "      /*  "24_1_S1_2"  */
-endif
-
-@logindx = number(" 700210 24_1_S2_2     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "RE24_1_S2_2 "      /*  "24_1_S2_2"  */
-endif
-
-@logindx = number(" 700211 24_1_S3_2     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "RE24_1_S3_2 "      /*  "24_1_S3_2"  */
-endif
-
-@logindx = number(" 700212 24_1_S1_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "RE24_1_S1_1 "      /*  "24_1_S1_1"  */
-endif
-
-@logindx = number(" 700213 24_1_S2_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "RE24_1_S2_1 "      /*  "24_1_S2_1"  */
-endif
-
-@logindx = number(" 700214 24_1_S3_1     34.50")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "RE24_1_S3_1 "      /*  "24_1_S3_1"  */
-endif
-
-@logindx = number(" 700215 24_1_S1        0.66")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "REPL_24_1_S1"      /*  "24_1_S1"  */
-endif
-
-@logindx = number(" 700216 24_1_S2        0.66")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "REPL_24_1_S2"      /*  "24_1_S2"  */
-endif
-
-@logindx = number(" 700217 24_1_S3        0.66")
-if (@logindx != -1)
-  busd[@logindx].busnam =  "REPL_24_1_S3"      /*  "24_1_S3"  */
-endif
-
 @logindx = casepar[0].nbus
 @ret=ins("busd", @logindx-1, 1)
 @ret=ins("volt", @logindx-1, 1)
@@ -1297,8 +572,8 @@ $logck = "1 "
 @logsec = 1
 @logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
 if (@logindx != -1)
-  secdd[@logindx].rate[0] = 159      /*  143  */
-  secdd[@logindx].rate[1] = 270      /*  143  */
+  secdd[@logindx].rate[0] = 159      /*  92  */
+  secdd[@logindx].rate[1] = 270      /*  92  */
   secdd[@logindx].rate[2] = 159      /*  143  */
   secdd[@logindx].rate[3] = 270      /*  143  */
   secdd[@logindx].rate[4] = 159      /*  143  */
@@ -1307,14 +582,24 @@ if (@logindx != -1)
   secdd[@logindx].rate[7] = 270      /*  143  */
 endif
 
+@logfrom = number("  70020 CASTL_RK_T1  115.00")
+@logto = number("  70308 PALMER_LK    115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 140      /*  156  */
+  secdd[@logindx].rate[1] = 140      /*  172  */
+endif
+
 @logfrom = number("  70023 ALLISON      115.00")
 @logto = number("  70400 SODA_LAKES   115.00")
 $logck = "1 "
 @logsec = 1
 @logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
 if (@logindx != -1)
-  secdd[@logindx].rate[0] = 189.199997      /*  153  */
-  secdd[@logindx].rate[1] = 208.100006      /*  174  */
+  secdd[@logindx].rate[0] = 189.199997      /*  189  */
+  secdd[@logindx].rate[1] = 208.100006      /*  208  */
   secdd[@logindx].rate[2] = 208.100006      /*  153  */
   secdd[@logindx].rate[3] = 208.100006      /*  174  */
   secdd[@logindx].rate[4] = 189.199997      /*  153  */
@@ -1360,6 +645,66 @@ secdd[@logindx].pown[1] = 0.000
 secdd[@logindx].pown[2] = 0.000
 secdd[@logindx].pown[3] = 0.000
 
+@logfrom = number("  70036 ARAPAHOE_A   115.00")
+@logto = number("  70531 AIR_LIQ_TP   115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 159      /*  120  */
+  secdd[@logindx].rate[1] = 159      /*  154  */
+endif
+
+@logfrom = number("  70037 ARAPAHOE_B   115.00")
+@logto = number("  70401 SOUTH_TAP    115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 239      /*  159  */
+  secdd[@logindx].rate[1] = 239      /*  175  */
+endif
+
+@logfrom = number("  70038 ARAPAHOE     230.00")
+@logto = number("  70189 GREENWOOD_2  230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 956      /*  574  */
+  secdd[@logindx].rate[1] = 956      /*  631  */
+endif
+
+@logfrom = number("  70038 ARAPAHOE     230.00")
+@logto = number("  70527 SANTA_FE     230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 505      /*  504  */
+  secdd[@logindx].rate[1] = 556      /*  555  */
+endif
+
+@logfrom = number("  70045 BANCROFT     115.00")
+@logto = number("  70401 SOUTH_TAP    115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 239      /*  159  */
+  secdd[@logindx].rate[1] = 239      /*  175  */
+endif
+
+@logfrom = number("  70046 BUCKLEY2     230.00")
+@logto = number("  70396 SMOKY_HL     230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 796      /*  478  */
+  secdd[@logindx].rate[1] = 796      /*  478  */
+endif
+
 @logfrom = number("  70046 BUCKLEY2     230.00")
 @logto = number("  70491 TOLLGATE     230.00")
 $logck = "1 "
@@ -1367,9 +712,25 @@ $logck = "1 "
 @logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
 if (@logindx != -1)
   secdd[@logindx].rate[0] = 796      /*  484  */
-  secdd[@logindx].rate[1] = 796      /*  554  */
+  secdd[@logindx].rate[1] = 796      /*  555  */
   secdd[@logindx].rate[2] = 796      /*  484  */
   secdd[@logindx].rate[3] = 796      /*  554  */
+endif
+
+@logfrom = number("  70047 BARR_LAKE    230.00")
+@logto = number("  70489 KNUTSON      230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].zsecr = 0.00004      /*  0.0004  */
+  secdd[@logindx].bsec = 0      /*  0.00078  */
+  secdd[@logindx].rate[2] = 0      /*  239  */
+  secdd[@logindx].rate[3] = 0      /*  239  */
+  secdd[@logindx].rate[4] = 0      /*  239  */
+  secdd[@logindx].rate[5] = 0      /*  239  */
+  secdd[@logindx].rate[6] = 0      /*  239  */
+  secdd[@logindx].rate[7] = 0      /*  239  */
 endif
 
 @logindx = casepar[0].nbrsec
@@ -1423,6 +784,103 @@ if (@logindx != -1)
   secdd[@logindx].rate[7] = 0      /*  158  */
 endif
 
+@logfrom = number("  70053 BLUE_RIVER   230.00")
+@logto = number("  70088 GOREPASS     230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[5] = 476      /*  473  */
+  secdd[@logindx].rate[6] = 486      /*  468  */
+endif
+
+@logfrom = number("  70056 BUENA_VST_T  115.00")
+@logto = number("  70304 OTERO_TP     115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 171      /*  121.503365  */
+  secdd[@logindx].rate[1] = 171      /*  121.503365  */
+endif
+
+@logfrom = number("  70056 BUENA_VST_T  115.00")
+@logto = number("  70312 RAY_LEWI     115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 154      /*  91.4263  */
+  secdd[@logindx].rate[1] = 154      /*  91.4263  */
+endif
+
+@logfrom = number("  70065 BROOMFIELD   115.00")
+@logto = number("  70174 FEDERHT23    115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 398      /*  159  */
+  secdd[@logindx].rate[1] = 398      /*  174  */
+endif
+
+@logfrom = number("  70065 BROOMFIELD   115.00")
+@logto = number("  70382 SEMPER       115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 398      /*  159  */
+  secdd[@logindx].rate[1] = 398      /*  175  */
+endif
+
+@logfrom = number("  70066 LOOKOUT_2    115.00")
+@logto = number("  70342 QUAKER_TP    115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 231      /*  239  */
+endif
+
+@logfrom = number("  70067 BUCKLEY1     230.00")
+@logto = number("  70396 SMOKY_HL     230.00")
+$logck = "2 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 796      /*  503  */
+  secdd[@logindx].rate[1] = 796      /*  553  */
+endif
+
+@logfrom = number("  70067 BUCKLEY1     230.00")
+@logto = number("  70512 JEWELL1      230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[1] = 555      /*  554  */
+endif
+
+@logfrom = number("  70090 FT_LUPTON_2  115.00")
+@logto = number("  70307 PLATTE_VLY   115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[1] = 239      /*  265  */
+endif
+
+@logfrom = number("  70091 CASTL_RK_CR  115.00")
+@logto = number("  70020 CASTL_RK_T1  115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 129      /*  179  */
+  secdd[@logindx].rate[1] = 142      /*  179  */
+endif
+
 @logindx = casepar[0].nbrsec
 @ret=ins("secdd", @logindx-1, 1)
 @logfrom = number("  70107 CHEROKEE     230.00")
@@ -1461,20 +919,70 @@ secdd[@logindx].pown[1] = 0.000
 secdd[@logindx].pown[2] = 0.000
 secdd[@logindx].pown[3] = 0.000
 
+@logfrom = number("  70108 CHEROKEE_S   115.00")
+@logto = number("  70277 MAPLETO2     115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 318      /*  159  */
+  secdd[@logindx].rate[1] = 318      /*  175  */
+endif
+
+@logfrom = number("  70110 CHEROKEE_N   115.00")
+@logto = number("  70174 FEDERHT23    115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 398      /*  205  */
+  secdd[@logindx].rate[1] = 398      /*  226  */
+endif
+
+@logfrom = number("  70110 CHEROKEE_N   115.00")
+@logto = number("  70175 FEDERHT1     115.00")
+$logck = "2 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 398      /*  205  */
+  secdd[@logindx].rate[1] = 398      /*  226  */
+endif
+
+@logfrom = number("  70114 CLIMAX       115.00")
+@logto = number("  70257 LEADVIL1     115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 57      /*  77  */
+  secdd[@logindx].rate[1] = 57      /*  85  */
+endif
+
 @logfrom = number("  70114 CLIMAX       115.00")
 @logto = number("  70418 SUMMIT1      115.00")
 $logck = "1 "
 @logsec = 1
 @logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
 if (@logindx != -1)
-  secdd[@logindx].rate[0] = 82      /*  80  */
-  secdd[@logindx].rate[1] = 82      /*  80  */
+  secdd[@logindx].rate[0] = 82      /*  49  */
+  secdd[@logindx].rate[1] = 82      /*  49  */
   secdd[@logindx].rate[2] = 82      /*  80  */
   secdd[@logindx].rate[3] = 82      /*  80  */
   secdd[@logindx].rate[4] = 82      /*  80  */
   secdd[@logindx].rate[5] = 0      /*  80  */
   secdd[@logindx].rate[6] = 0      /*  80  */
   secdd[@logindx].rate[7] = 0      /*  80  */
+endif
+
+@logfrom = number("  70115 HAPPY_CNYN   115.00")
+@logto = number("  70138 DANIEL_PK    115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 132      /*  189  */
+  secdd[@logindx].rate[1] = 132      /*  208  */
 endif
 
 @logindx = casepar[0].nbrsec
@@ -1553,6 +1061,35 @@ secdd[@logindx].pown[1] = 0.000
 secdd[@logindx].pown[2] = 0.000
 secdd[@logindx].pown[3] = 0.000
 
+@logfrom = number("  70127 COORS_RCL    115.00")
+@logto = number("  70191 FT_LUPTON_1  115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[1] = 239      /*  303  */
+endif
+
+@logfrom = number("  70139 DANIEL_PK    230.00")
+@logto = number("  70323 PRAIRIE_3    230.00")
+$logck = "2 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 916      /*  478  */
+  secdd[@logindx].rate[1] = 916      /*  478  */
+endif
+
+@logfrom = number("  70139 DANIEL_PK    230.00")
+@logto = number("  70331 PRAIRIE_1    230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 916      /*  571  */
+  secdd[@logindx].rate[1] = 916      /*  629  */
+endif
+
 @logfrom = number("  70139 DANIEL_PK    230.00")
 @logto = number("  70527 SANTA_FE     230.00")
 $logck = "1 "
@@ -1563,6 +1100,55 @@ if (@logindx != -1)
   secdd[@logindx].rate[1] = 637      /*  553  */
   secdd[@logindx].rate[2] = 637      /*  502  */
   secdd[@logindx].rate[3] = 637      /*  553  */
+endif
+
+@logfrom = number("  70149 DENVER_TM    230.00")
+@logto = number("  70163 ELATI1       230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 796      /*  307  */
+  secdd[@logindx].rate[1] = 796      /*  440  */
+endif
+
+@logfrom = number("  70155 DILLON       115.00")
+@logto = number("  70421 SUMTAP2      115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 81      /*  88  */
+  secdd[@logindx].rate[1] = 81      /*  96  */
+endif
+
+@logfrom = number("  70162 EAST_1       115.00")
+@logto = number("  70537 FITZ_SIMONS  115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 120      /*  159  */
+  secdd[@logindx].rate[1] = 120      /*  175  */
+endif
+
+@logfrom = number("  70162 EAST_1       115.00")
+@logto = number("  70538 CHAMBERS     115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[1] = 159      /*  175  */
+endif
+
+@logfrom = number("  70163 ELATI1       230.00")
+@logto = number("  70291 MONROEPS     230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 796      /*  319  */
+  secdd[@logindx].rate[1] = 796      /*  398  */
 endif
 
 @logfrom = number("  70164 ELDORADO     115.00")
@@ -1576,6 +1162,56 @@ if (@logindx != -1)
   secdd[@logindx].rate[5] = 0      /*  212  */
   secdd[@logindx].rate[6] = 0      /*  182  */
   secdd[@logindx].rate[7] = 0      /*  212  */
+endif
+
+@logfrom = number("  70171 EAST_2       115.00")
+@logto = number("  70395 SMOKY_HL_N   115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 120      /*  158  */
+  secdd[@logindx].rate[1] = 120      /*  174  */
+endif
+
+@logfrom = number("  70171 EAST_2       115.00")
+@logto = number("  70395 SMOKY_HL_N   115.00")
+$logck = "2 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 120      /*  158  */
+  secdd[@logindx].rate[1] = 145      /*  174  */
+endif
+
+@logfrom = number("  70175 FEDERHT1     115.00")
+@logto = number("  70382 SEMPER       115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 398      /*  159  */
+  secdd[@logindx].rate[1] = 398      /*  174  */
+endif
+
+@logfrom = number("  70189 GREENWOOD_2  230.00")
+@logto = number("  70323 PRAIRIE_3    230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 916      /*  572  */
+  secdd[@logindx].rate[1] = 916      /*  629  */
+endif
+
+@logfrom = number("  70191 FT_LUPTON_1  115.00")
+@logto = number("  70450 VASQUEZ      115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 159      /*  160  */
+  secdd[@logindx].rate[1] = 159      /*  175  */
 endif
 
 @logfrom = number("  70198 GILCREST     115.00")
@@ -1596,10 +1232,30 @@ $logck = "1 "
 @logsec = 1
 @logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
 if (@logindx != -1)
-  secdd[@logindx].rate[0] = 239      /*  144  */
-  secdd[@logindx].rate[1] = 239      /*  144  */
+  secdd[@logindx].rate[0] = 239      /*  160  */
+  secdd[@logindx].rate[1] = 239      /*  176  */
   secdd[@logindx].rate[2] = 239      /*  144  */
   secdd[@logindx].rate[3] = 239      /*  144  */
+endif
+
+@logfrom = number("  70208 GRAY_STREET  115.00")
+@logto = number("  70402 SOUTH        115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 159      /*  120  */
+  secdd[@logindx].rate[1] = 159      /*  154  */
+endif
+
+@logfrom = number("  70212 GREENWOOD_1  230.00")
+@logto = number("  70331 PRAIRIE_1    230.00")
+$logck = "2 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 916      /*  572  */
+  secdd[@logindx].rate[1] = 916      /*  629  */
 endif
 
 @logfrom = number("  70215 HARRISON_P1  115.00")
@@ -1612,20 +1268,183 @@ if (@logindx != -1)
   secdd[@logindx].rate[1] = 378      /*  141  */
 endif
 
+@logfrom = number("  70218 HENDRSN      115.00")
+@logto = number("  70328 PORTAL       115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[1] = 154      /*  152  */
+endif
+
+@logfrom = number("  70224 HOGBACK      115.00")
+@logto = number("  70400 SODA_LAKES   115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 158      /*  199  */
+  secdd[@logindx].rate[1] = 159      /*  199  */
+endif
+
+@logfrom = number("  70239 JEWELL2      230.00")
+@logto = number("  70260 LEETSDALE    230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 796      /*  478  */
+  secdd[@logindx].rate[1] = 796      /*  478  */
+endif
+
+@logfrom = number("  70239 JEWELL2      230.00")
+@logto = number("  70491 TOLLGATE     230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 796      /*  484  */
+  secdd[@logindx].rate[1] = 796      /*  555  */
+endif
+
+@logfrom = number("  70253 LAMAR_CO     115.00")
+@logto = number("  70452 VILAS        115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 137      /*  202  */
+  secdd[@logindx].rate[1] = 137      /*  202  */
+  secdd[@logindx].rate[2] = 137      /*  202  */
+  secdd[@logindx].rate[3] = 137      /*  202  */
+  secdd[@logindx].rate[4] = 137      /*  202  */
+  secdd[@logindx].rate[5] = 137      /*  202  */
+  secdd[@logindx].rate[6] = 137      /*  202  */
+  secdd[@logindx].rate[7] = 137      /*  202  */
+endif
+
+@logfrom = number("  70253 LAMAR_CO     115.00")
+@logto = number("  70472 WILOW_CK     115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[1] = 192      /*  202  */
+  secdd[@logindx].rate[3] = 192      /*  202  */
+  secdd[@logindx].rate[5] = 192      /*  202  */
+  secdd[@logindx].rate[7] = 192      /*  202  */
+endif
+
+@logfrom = number("  70260 LEETSDALE    230.00")
+@logto = number("  70291 MONROEPS     230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 796      /*  319  */
+  secdd[@logindx].rate[1] = 796      /*  398  */
+endif
+
+@logfrom = number("  70273 MALTA        115.00")
+@logto = number("  70435 TWN_LAK_TP   115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 165      /*  237  */
+  secdd[@logindx].rate[1] = 165      /*  237  */
+endif
+
+@logfrom = number("  70285 MIDWAY_PS    115.00")
+@logto = number("  70301 NTHRIDGE     115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[1] = 142      /*  144  */
+  secdd[@logindx].rate[2] = 146      /*  147  */
+  secdd[@logindx].rate[3] = 161      /*  164  */
+  secdd[@logindx].rate[4] = 120      /*  0  */
+  secdd[@logindx].rate[5] = 143      /*  0  */
+  secdd[@logindx].rate[6] = 120      /*  0  */
+  secdd[@logindx].rate[7] = 143      /*  0  */
+endif
+
+@logfrom = number("  70285 MIDWAY_PS    115.00")
+@logto = number("  70456 W.STATON     115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[4] = 80      /*  0  */
+  secdd[@logindx].rate[5] = 88      /*  0  */
+  secdd[@logindx].rate[6] = 80      /*  0  */
+  secdd[@logindx].rate[7] = 88      /*  0  */
+endif
+
+@logfrom = number("  70286 MIDWAY_PS    230.00")
+@logto = number("  73446 KE_SOUTHB    230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[3] = 589      /*  0  */
+endif
+
+@logfrom = number("  70287 MILL         115.00")
+@logto = number("  73296 FRASER       115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[1] = 168      /*  170  */
+  secdd[@logindx].rate[3] = 168      /*  170  */
+  secdd[@logindx].rate[5] = 168      /*  170  */
+  secdd[@logindx].rate[7] = 168      /*  170  */
+endif
+
+@logfrom = number("  70290 MONFORT      115.00")
+@logto = number("  70897 DCPL_TP      115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 220      /*  221  */
+  secdd[@logindx].rate[1] = 220      /*  243  */
+endif
+
+@logfrom = number("  70304 OTERO_TP     115.00")
+@logto = number("  70435 TWN_LAK_TP   115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 165      /*  247  */
+  secdd[@logindx].rate[1] = 165      /*  275  */
+endif
+
 @logfrom = number("  70308 PALMER_LK    115.00")
 @logto = number("  73414 FOXRUN       115.00")
 $logck = "1 "
 @logsec = 1
 @logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
 if (@logindx != -1)
-  secdd[@logindx].rate[0] = 156      /*  142  */
-  secdd[@logindx].rate[1] = 162      /*  157  */
   secdd[@logindx].rate[2] = 156      /*  142  */
   secdd[@logindx].rate[3] = 162      /*  157  */
   secdd[@logindx].rate[4] = 156      /*  142  */
   secdd[@logindx].rate[5] = 162      /*  157  */
   secdd[@logindx].rate[6] = 156      /*  142  */
   secdd[@logindx].rate[7] = 162      /*  157  */
+endif
+
+@logfrom = number("  70309 PARACHUTE    230.00")
+@logto = number("  77659 RIFLE_UTE    230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 478      /*  567  */
+  secdd[@logindx].rate[1] = 478      /*  623  */
 endif
 
 @logindx = casepar[0].nbrsec
@@ -1662,6 +1481,54 @@ secdd[@logindx].nown[1] = 0
 secdd[@logindx].nown[2] = 0
 secdd[@logindx].nown[3] = 0
 secdd[@logindx].pown[0] = 1.000
+secdd[@logindx].pown[1] = 0.000
+secdd[@logindx].pown[2] = 0.000
+secdd[@logindx].pown[3] = 0.000
+
+@logfrom = number("  70312 RAY_LEWI     115.00")
+@logto = number("  70327 PONCHA_E     115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 120      /*  119.511505  */
+  secdd[@logindx].rate[1] = 154      /*  123.893593  */
+endif
+
+@logindx = casepar[0].nbrsec
+@ret=ins("secdd", @logindx-1, 1)
+@logfrom = number("  70324 LACOMBE_1    230.00")
+@logto = number("  70806 LACOMBE_2    230.00")
+secdd[@logindx].ifrom = @logfrom
+secdd[@logindx].ito = @logto
+secdd[@logindx].ck = "1 "
+secdd[@logindx].st = 0
+secdd[@logindx].nsec = 1
+secdd[@logindx].type = 0
+secdd[@logindx].zsecr = 0.000000
+secdd[@logindx].zsecx = 0.000020
+secdd[@logindx].bsec = 0.000000
+secdd[@logindx].rate[0] = 859.20
+secdd[@logindx].rate[1] = 956.10
+secdd[@logindx].rate[2] = 859.20
+secdd[@logindx].rate[3] = 956.10
+secdd[@logindx].rate[4] = 0.00
+secdd[@logindx].rate[5] = 0.00
+secdd[@logindx].rate[6] = 0.00
+secdd[@logindx].rate[7] = 0.00
+secdd[@logindx].area = 70
+secdd[@logindx].zone = 700
+secdd[@logindx].lngsec = 0.000
+secdd[@logindx].trangi = 0.000000
+secdd[@logindx].trantapf = 0.000000
+secdd[@logindx].trantapt = 0.000000
+secdd[@logindx].lid = "                                        "
+secdd[@logindx].ohms = 0
+secdd[@logindx].nown[0] = 0
+secdd[@logindx].nown[1] = 0
+secdd[@logindx].nown[2] = 0
+secdd[@logindx].nown[3] = 0
+secdd[@logindx].pown[0] = 0.000
 secdd[@logindx].pown[1] = 0.000
 secdd[@logindx].pown[2] = 0.000
 secdd[@logindx].pown[3] = 0.000
@@ -1715,6 +1582,30 @@ secdd[@logindx].pown[1] = 0.000
 secdd[@logindx].pown[2] = 0.000
 secdd[@logindx].pown[3] = 0.000
 
+@logfrom = number("  70374 SAN_LS_VLY   115.00")
+@logto = number("  70411 STANLEY      115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[1] = 119      /*  145  */
+  secdd[@logindx].rate[3] = 119      /*  145  */
+  secdd[@logindx].rate[5] = 119      /*  145  */
+  secdd[@logindx].rate[7] = 119      /*  145  */
+endif
+
+@logfrom = number("  70374 SAN_LS_VLY   115.00")
+@logto = number("  70467 WAVERLY      115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[1] = 119      /*  143  */
+  secdd[@logindx].rate[3] = 119      /*  143  */
+  secdd[@logindx].rate[5] = 119      /*  143  */
+  secdd[@logindx].rate[7] = 119      /*  143  */
+endif
+
 @logfrom = number("  70375 SAN_LS_VLY   230.00")
 @logto = number("  79054 PONCHABR     230.00")
 $logck = "1 "
@@ -1725,20 +1616,165 @@ if (@logindx != -1)
   secdd[@logindx].zsecx = 0.06862      /*  0.0682  */
 endif
 
+@logfrom = number("  70394 SMELTER      115.00")
+@logto = number("  70550 W.CANON      115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 73      /*  62  */
+  secdd[@logindx].rate[4] = 19      /*  0  */
+  secdd[@logindx].rate[5] = 19      /*  0  */
+  secdd[@logindx].rate[6] = 19      /*  0  */
+  secdd[@logindx].rate[7] = 19      /*  0  */
+endif
+
+@logfrom = number("  70397 BEAVER_CK_S  115.00")
+@logto = number("  73020 BEAVERCK     115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 347      /*  376  */
+endif
+
+@logfrom = number("  70399 BEAVER_CK_P  230.00")
+@logto = number("  73192 STORY        230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 276      /*  277  */
+  secdd[@logindx].rate[1] = 276      /*  277  */
+endif
+
+@logfrom = number("  70402 SOUTH        115.00")
+@logto = number("  70531 AIR_LIQ_TP   115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 159      /*  120  */
+  secdd[@logindx].rate[1] = 159      /*  154  */
+endif
+
+@logfrom = number("  70432 TOWER        230.00")
+@logto = number("  70530 PICADILLY    230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[1] = 623      /*  624  */
+endif
+
+@logfrom = number("  70434 TWNLAKES     115.00")
+@logto = number("  70435 TWN_LAK_TP   115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 55      /*  112  */
+  secdd[@logindx].rate[1] = 55      /*  112  */
+  secdd[@logindx].rate[2] = 55      /*  112  */
+  secdd[@logindx].rate[3] = 55      /*  112  */
+  secdd[@logindx].rate[4] = 55      /*  112  */
+  secdd[@logindx].rate[5] = 55      /*  112  */
+  secdd[@logindx].rate[6] = 55      /*  112  */
+  secdd[@logindx].rate[7] = 55      /*  112  */
+endif
+
+@logfrom = number("  70450 VASQUEZ      115.00")
+@logto = number("  70219 ANADARKO_T   115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 144      /*  160  */
+  secdd[@logindx].rate[1] = 144      /*  176  */
+endif
+
+@logfrom = number("  70471 WELD_PS      230.00")
+@logto = number("  73212 WELD  LM     230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 797      /*  859  */
+  secdd[@logindx].rate[1] = 797      /*  956  */
+endif
+
+@logfrom = number("  70497 HIGH_PT      230.00")
+@logto = number("  70528 SPRUCE       230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 741.400024      /*  741  */
+  secdd[@logindx].rate[1] = 815.5      /*  815  */
+endif
+
 @logfrom = number("  70525 MT_HARRIS    138.00")
 @logto = number("  79038 HAYDEN       138.00")
 $logck = "1 "
 @logsec = 1
 @logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
 if (@logindx != -1)
-  secdd[@logindx].rate[0] = 72      /*  48  */
-  secdd[@logindx].rate[1] = 72      /*  48  */
   secdd[@logindx].rate[2] = 72      /*  48  */
   secdd[@logindx].rate[3] = 72      /*  48  */
   secdd[@logindx].rate[4] = 72      /*  48  */
   secdd[@logindx].rate[5] = 72      /*  48  */
   secdd[@logindx].rate[6] = 72      /*  48  */
   secdd[@logindx].rate[7] = 72      /*  48  */
+endif
+
+@logfrom = number("  70526 IMBODEN      230.00")
+@logto = number("  70497 HIGH_PT      230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 566.900024      /*  567  */
+  secdd[@logindx].rate[1] = 623.599976      /*  624  */
+endif
+
+@logfrom = number("  70528 SPRUCE       230.00")
+@logto = number("  70530 PICADILLY    230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 567      /*  755  */
+  secdd[@logindx].rate[1] = 623      /*  837  */
+endif
+
+@logfrom = number("  70528 SPRUCE       230.00")
+@logto = number("  70532 POWHATON     230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 717      /*  741  */
+  secdd[@logindx].rate[1] = 717      /*  797  */
+endif
+
+@logfrom = number("  70534 BERTHOUD     115.00")
+@logto = number("  72191 GATEWY       115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].zsecr = 0.00423      /*  0.00427  */
+  secdd[@logindx].zsecx = 0.01289      /*  0.01253  */
+endif
+
+@logfrom = number("  70536 KESTREL      230.00")
+@logto = number("  70528 SPRUCE       230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 717      /*  755  */
+  secdd[@logindx].rate[1] = 717      /*  837  */
 endif
 
 @logindx = casepar[0].nbrsec
@@ -1778,6 +1814,26 @@ secdd[@logindx].pown[0] = 1.000
 secdd[@logindx].pown[1] = 0.000
 secdd[@logindx].pown[2] = 0.000
 secdd[@logindx].pown[3] = 0.000
+
+@logfrom = number("  70624 MISS_SITE    345.00")
+@logto = number("  70915 CANAL_XING   345.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 1637      /*  1449  */
+  secdd[@logindx].rate[1] = 1727      /*  1696  */
+endif
+
+@logfrom = number("  70624 MISS_SITE    345.00")
+@logto = number("  70915 CANAL_XING   345.00")
+$logck = "2 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 1637      /*  1686  */
+  secdd[@logindx].rate[1] = 1727      /*  1775  */
+endif
 
 @logindx = casepar[0].nbrsec
 @ret=ins("secdd", @logindx-1, 1)
@@ -1842,6 +1898,20 @@ $logck = "1 "
 @logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
 if (@logindx != -1)
   secdd[@logindx].zsecx = 0.00008      /*  0.0003  */
+endif
+
+@logfrom = number("  70659 BRONCOPLN_II 345.00")
+@logto = number("  70750 BRONCOPLN_I  345.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].zsecr = 0.00053      /*  0.00109  */
+  secdd[@logindx].zsecx = 0.015      /*  0.01067  */
+  secdd[@logindx].bsec = 0.09456      /*  0.12356  */
+  secdd[@logindx].rate[0] = 313      /*  1100  */
+  secdd[@logindx].rate[1] = 313      /*  1100  */
+  secdd[@logindx].rate[2] = 313      /*  0  */
 endif
 
 @logfrom = number("  70731 CHEYRGE_W13   34.50")
@@ -1926,6 +1996,85 @@ secdd[@logindx].pown[1] = 0.000
 secdd[@logindx].pown[2] = 0.000
 secdd[@logindx].pown[3] = 0.000
 
+@logfrom = number("  70819 MTNBREEZE    230.00")
+@logto = number("  70833 CEDARCK2     230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].zsecx = 0.0002      /*  0.0003  */
+endif
+
+@logfrom = number("  70862 AVERY_PS     230.00")
+@logto = number("  78085 TIMBERLN     230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 637      /*  692  */
+  secdd[@logindx].rate[1] = 637      /*  692  */
+  secdd[@logindx].rate[2] = 637      /*  692  */
+endif
+
+@logfrom = number("  70897 DCPL_TP      115.00")
+@logto = number("  70903 CLOVERLY     115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 220      /*  221  */
+  secdd[@logindx].rate[1] = 220      /*  243  */
+endif
+
+@logfrom = number("  70898 HUSKY        230.00")
+@logto = number("  73011 AULT         230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 576      /*  539  */
+  secdd[@logindx].rate[1] = 576      /*  539  */
+endif
+
+@logfrom = number("  70901 HUSKY        115.00")
+@logto = number("  70902 COLLINS_ST   115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[1] = 220      /*  243  */
+endif
+
+@logfrom = number("  70902 COLLINS_ST   115.00")
+@logto = number("  70903 CLOVERLY     115.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 220      /*  221  */
+  secdd[@logindx].rate[1] = 220      /*  243  */
+endif
+
+@logfrom = number("  70915 CANAL_XING   345.00")
+@logto = number("  70598 PAWNEE       345.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 1637      /*  1713  */
+  secdd[@logindx].rate[1] = 1727      /*  1775  */
+endif
+
+@logfrom = number("  70915 CANAL_XING   345.00")
+@logto = number("  70598 PAWNEE       345.00")
+$logck = "2 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  secdd[@logindx].rate[0] = 1637      /*  1713  */
+  secdd[@logindx].rate[1] = 1727      /*  1775  */
+endif
+
 @logfrom = number("  73011 AULT         230.00")
 @logto = number("  70474 WINDSOR      230.00")
 $logck = "1 "
@@ -1944,23 +2093,12 @@ $logck = "1 "
 @logsec = 1
 @logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
 if (@logindx != -1)
-  secdd[@logindx].rate[0] = 581      /*  576  */
-  secdd[@logindx].rate[1] = 589      /*  633  */
   secdd[@logindx].rate[2] = 581      /*  648  */
   secdd[@logindx].rate[3] = 589      /*  648  */
   secdd[@logindx].rate[4] = 581      /*  576  */
   secdd[@logindx].rate[5] = 589      /*  633  */
   secdd[@logindx].rate[6] = 581      /*  576  */
   secdd[@logindx].rate[7] = 589      /*  633  */
-endif
-
-@logfrom = number(" 700037 5R24_9_B1_1   34.50")
-@logto = number(" 700038 5R24_9_B1_2   34.50")
-$logck = "1 "
-@logsec = 1
-@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
-if (@logindx != -1)
-  secdd[@logindx].pown[0] = 0      /*  1  */
 endif
 
 @logfrom = number(" 700039 5RSC_2024_9  230.00")
@@ -1970,24 +2108,6 @@ $logck = "1 "
 @logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
 if (@logindx != -1)
   secdd[@logindx].pown[0] = 0      /*  1  */
-endif
-
-@logfrom = number(" 700102 3R23_1_S1_2   34.50")
-@logto = number(" 700103 3R23_1_S1_1   34.50")
-$logck = "1 "
-@logsec = 1
-@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
-if (@logindx != -1)
-  secdd[@logindx].rate[1] = 0      /*  117.599998  */
-endif
-
-@logfrom = number(" 700105 3R23_1_S2_2   34.50")
-@logto = number(" 700106 3R23_1_S2_1   34.50")
-$logck = "1 "
-@logsec = 1
-@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
-if (@logindx != -1)
-  secdd[@logindx].rate[1] = 0      /*  117.599998  */
 endif
 
 @logindx = casepar[0].nbrsec
@@ -2027,33 +2147,6 @@ secdd[@logindx].pown[0] = 1.000
 secdd[@logindx].pown[1] = 0.000
 secdd[@logindx].pown[2] = 0.000
 secdd[@logindx].pown[3] = 0.000
-
-@logfrom = number(" 700139 GI_2020_10   230.00")
-@logto = number(" 700140 GI20_10_SB12 230.00")
-$logck = "1 "
-@logsec = 1
-@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
-if (@logindx != -1)
-  secdd[@logindx].zsecx = 0.000133      /*  0.0003  */
-endif
-
-@logfrom = number(" 700141 GI20_10_SB1   34.50")
-@logto = number(" 700145 GI20_10_B1_1  34.50")
-$logck = "1 "
-@logsec = 1
-@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
-if (@logindx != -1)
-  secdd[@logindx].pown[0] = 0      /*  1  */
-endif
-
-@logfrom = number(" 700150 GI20_10_SB2   34.50")
-@logto = number(" 700149 GI20_10_B2_1  34.50")
-$logck = "1 "
-@logsec = 1
-@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
-if (@logindx != -1)
-  secdd[@logindx].pown[0] = 0      /*  1  */
-endif
 
 @logindx = casepar[0].nbrsec
 @ret=ins("secdd", @logindx-1, 1)
@@ -2379,8 +2472,26 @@ if (@logindx != -1)
   @ret = del("secdd", @logindx, 1)
 endif
 
+@logfrom = number("  70048 GREEN_VLY    230.00")
+@logto = number("  70077 R_2023_05    230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  @ret = del("secdd", @logindx, 1)
+endif
+
 @logfrom = number("  70107 CHEROKEE     230.00")
 @logto = number("  70324 LACOMBE_1    230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  @ret = del("secdd", @logindx, 1)
+endif
+
+@logfrom = number("  70121 COMANCHE_1   115.00")
+@logto = number("  70096 CF&ISE1      115.00")
 $logck = "1 "
 @logsec = 1
 @logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
@@ -2397,6 +2508,15 @@ if (@logindx != -1)
   @ret = del("secdd", @logindx, 1)
 endif
 
+@logfrom = number("  70311 PAWNEE       230.00")
+@logto = number("  70791 PI_2024_18   230.00")
+$logck = "1 "
+@logsec = 1
+@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
+if (@logindx != -1)
+  @ret = del("secdd", @logindx, 1)
+endif
+
 @logfrom = number("  70324 LACOMBE_1    230.00")
 @logto = number("  70152 BARKER       230.00")
 $logck = "2 "
@@ -2406,8 +2526,8 @@ if (@logindx != -1)
   @ret = del("secdd", @logindx, 1)
 endif
 
-@logfrom = number("  70791 PI_2024_18   230.00")
-@logto = number(" 700021 24_18_SB12   230.00")
+@logfrom = number("  70528 SPRUCE       230.00")
+@logto = number("  70077 R_2023_05    230.00")
 $logck = "1 "
 @logsec = 1
 @logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
@@ -2415,17 +2535,8 @@ if (@logindx != -1)
   @ret = del("secdd", @logindx, 1)
 endif
 
-@logfrom = number("  70916 FT_ST_VRAIN  345.00")
-@logto = number(" 700097 PI_2024_11   345.00")
-$logck = "1 "
-@logsec = 1
-@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
-if (@logindx != -1)
-  @ret = del("secdd", @logindx, 1)
-endif
-
-@logfrom = number(" 700005 24_5_G_1      34.50")
-@logto = number(" 700007 24_5_G_2      34.50")
+@logfrom = number("  70623 MISS_SITE    230.00")
+@logto = number("  70791 PI_2024_18   230.00")
 $logck = "1 "
 @logsec = 1
 @logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
@@ -2442,80 +2553,8 @@ if (@logindx != -1)
   @ret = del("secdd", @logindx, 1)
 endif
 
-@logfrom = number(" 700022 24_18_SB1     34.50")
-@logto = number(" 700024 24_18_S1_1    34.50")
-$logck = "1 "
-@logsec = 1
-@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
-if (@logindx != -1)
-  @ret = del("secdd", @logindx, 1)
-endif
-
-@logfrom = number(" 700022 24_18_SB1     34.50")
-@logto = number(" 700026 24_18_B1_1    34.50")
-$logck = "1 "
-@logsec = 1
-@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
-if (@logindx != -1)
-  @ret = del("secdd", @logindx, 1)
-endif
-
-@logfrom = number(" 700023 24_18_SB2     34.50")
-@logto = number(" 700028 24_18_S2_1    34.50")
-$logck = "1 "
-@logsec = 1
-@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
-if (@logindx != -1)
-  @ret = del("secdd", @logindx, 1)
-endif
-
-@logfrom = number(" 700023 24_18_SB2     34.50")
-@logto = number(" 700030 24_18_B2_1    34.50")
-$logck = "1 "
-@logsec = 1
-@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
-if (@logindx != -1)
-  @ret = del("secdd", @logindx, 1)
-endif
-
-@logfrom = number(" 700098 24_11_B_2     34.50")
-@logto = number(" 700099 24_11_B_1     34.50")
-$logck = "2 "
-@logsec = 1
-@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
-if (@logindx != -1)
-  @ret = del("secdd", @logindx, 1)
-endif
-
 @logfrom = number(" 700134 REPL_2021_1  230.00")
 @logto = number("  70122 COMANCHE     230.00")
-$logck = "1 "
-@logsec = 1
-@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
-if (@logindx != -1)
-  @ret = del("secdd", @logindx, 1)
-endif
-
-@logfrom = number(" 700218 24_8_SB_1    115.00")
-@logto = number(" 700224 PI_2024_8    115.00")
-$logck = "1 "
-@logsec = 1
-@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
-if (@logindx != -1)
-  @ret = del("secdd", @logindx, 1)
-endif
-
-@logfrom = number(" 700220 24_8_S_1      34.50")
-@logto = number(" 700219 24_8_SB       34.50")
-$logck = "1 "
-@logsec = 1
-@logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
-if (@logindx != -1)
-  @ret = del("secdd", @logindx, 1)
-endif
-
-@logfrom = number(" 700221 24_8_B_1      34.50")
-@logto = number(" 700219 24_8_SB       34.50")
 $logck = "1 "
 @logsec = 1
 @logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
@@ -2530,6 +2569,170 @@ $logck = "1 "
 @logindx = rec_index(0, 1, @logfrom, @logto, $logck, @logsec, -1)
 if (@logindx != -1)
   @ret = del("secdd", @logindx, 1)
+endif
+
+@logfrom = number("  70052 BLUE_RIVER   115.00")
+@logto = number("  70053 BLUE_RIVER   230.00")
+$logck = "T1"
+@logtert = number("      0 ------------   0.00")
+@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
+if (@logindx != -1)
+  tran[@logindx].rate[0] = 159      /*  163  */
+  tran[@logindx].rate[1] = 159      /*  206  */
+endif
+
+@logfrom = number("  70061 BOONE        230.00")
+@logto = number("  70060 BOONE        115.00")
+$logck = "T1"
+@logtert = number("  71981 BOONE         13.80")
+@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
+if (@logindx != -1)
+  tran[@logindx].rates[0] = 147.199997      /*  147  */
+  tran[@logindx].rates[1] = 159.300003      /*  159  */
+endif
+
+@logfrom = number("  70066 LOOKOUT_2    115.00")
+@logto = number("  70266 LOOKOUT      230.00")
+$logck = "T2"
+@logtert = number("      0 ------------   0.00")
+@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
+if (@logindx != -1)
+  tran[@logindx].rate[1] = 159      /*  191  */
+endif
+
+@logfrom = number("  70139 DANIEL_PK    230.00")
+@logto = number("  70138 DANIEL_PK    115.00")
+$logck = "T1"
+@logtert = number("  71984 DANIEL_PK     13.80")
+@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
+if (@logindx != -1)
+  tran[@logindx].stepp = 0.00625      /*  -0.00625  */
+endif
+
+@logfrom = number("  70191 FT_LUPTON_1  115.00")
+@logto = number("  70192 FT_LUPTON    230.00")
+$logck = "T4"
+@logtert = number("      0 ------------   0.00")
+@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
+if (@logindx != -1)
+  @logreg = number("      0 ------------   0.00")
+  tran[@logindx].kreg = @logreg      /*    70191 FT_LUPTON_1  115.00  */
+endif
+
+@logfrom = number("  70205 GRAND_JT     230.00")
+@logto = number("  77656 UTE_GRND_JN  345.00")
+$logck = "T1"
+@logtert = number("      0 ------------   0.00")
+@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
+if (@logindx != -1)
+  tran[@logindx].rate[2] = 273      /*  300  */
+  tran[@logindx].rate[3] = 341      /*  319  */
+  tran[@logindx].rate[5] = 341      /*  319  */
+  tran[@logindx].rate[7] = 341      /*  319  */
+endif
+
+@logfrom = number("  70232 HOPKINS      230.00")
+@logto = number("  70231 HOPKINS      115.00")
+$logck = "T3"
+@logtert = number("  71953 HOPKINS       13.80")
+@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
+if (@logindx != -1)
+  tran[@logindx].stepp = 0.00625      /*  -0.00625  */
+  tran[@logindx].rates[0] = 0      /*  94  */
+  tran[@logindx].rates[1] = 0      /*  120  */
+endif
+
+@logfrom = number("  70255 LAMAR_C2     230.00")
+@logto = number("  70253 LAMAR_CO     115.00")
+$logck = "T1"
+@logtert = number("  70955 LAMAR_T1      13.80")
+@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
+if (@logindx != -1)
+  tran[@logindx].tbasept = 0      /*  100  */
+  tran[@logindx].tbasets = 0      /*  100  */
+  tran[@logindx].vtmax = 1.1      /*  0  */
+  tran[@logindx].vtmin = 0.9      /*  0  */
+endif
+
+@logfrom = number("  70255 LAMAR_C2     230.00")
+@logto = number("  70253 LAMAR_CO     115.00")
+$logck = "T2"
+@logtert = number("  70957 LAMAR_T2      13.80")
+@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
+if (@logindx != -1)
+  tran[@logindx].tbasept = 0      /*  100  */
+  tran[@logindx].tbasets = 0      /*  100  */
+  tran[@logindx].vtmax = 1.1      /*  0  */
+  tran[@logindx].vtmin = 0.9      /*  0  */
+endif
+
+@logfrom = number("  70265 LOOKOUT_1    115.00")
+@logto = number("  70266 LOOKOUT      230.00")
+$logck = "T1"
+@logtert = number("      0 ------------   0.00")
+@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
+if (@logindx != -1)
+  tran[@logindx].rate[1] = 159      /*  187  */
+endif
+
+@logfrom = number("  70274 MALTA        230.00")
+@logto = number("  70273 MALTA        115.00")
+$logck = "T1"
+@logtert = number("  71982 MALTA_T1      13.80")
+@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
+if (@logindx != -1)
+  tran[@logindx].rates[0] = 97.599998      /*  98  */
+endif
+
+@logfrom = number("  70286 MIDWAY_PS    230.00")
+@logto = number("  70285 MIDWAY_PS    115.00")
+$logck = "T1"
+@logtert = number("  71980 MIDW          13.80")
+@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
+if (@logindx != -1)
+  tran[@logindx].rate[0] = 97      /*  172  */
+  tran[@logindx].rate[1] = 120      /*  200  */
+  tran[@logindx].rate[2] = 97      /*  280  */
+  tran[@logindx].rate[3] = 120      /*  280  */
+  tran[@logindx].rate[4] = 97      /*  280  */
+  tran[@logindx].rate[5] = 120      /*  280  */
+  tran[@logindx].rate[6] = 97      /*  280  */
+  tran[@logindx].rate[7] = 120      /*  280  */
+  tran[@logindx].rates[0] = 0      /*  172  */
+  tran[@logindx].rates[1] = 0      /*  200  */
+endif
+
+@logfrom = number("  70396 SMOKY_HL     230.00")
+@logto = number("  70125 SMOKY_HL_S   115.00")
+$logck = "T2"
+@logtert = number("  71991 SMOKY_HL_T2   13.80")
+@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
+if (@logindx != -1)
+  tran[@logindx].rate[0] = 159      /*  168  */
+  tran[@logindx].rate[1] = 159      /*  210  */
+  tran[@logindx].rates[0] = 0      /*  168  */
+  tran[@logindx].rates[1] = 0      /*  210  */
+endif
+
+@logfrom = number("  70396 SMOKY_HL     230.00")
+@logto = number("  70395 SMOKY_HL_N   115.00")
+$logck = "T1"
+@logtert = number("  71990 SMOKY_HL_T1   13.80")
+@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
+if (@logindx != -1)
+  tran[@logindx].rate[1] = 159      /*  187  */
+  tran[@logindx].rates[0] = 144.199997      /*  144  */
+  tran[@logindx].rates[1] = 144.199997      /*  187  */
+endif
+
+@logfrom = number("  70426 TARRYALL     115.00")
+@logto = number("  70427 TARRYALL     230.00")
+$logck = "T1"
+@logtert = number("      0 ------------   0.00")
+@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
+if (@logindx != -1)
+  tran[@logindx].rate[0] = 100      /*  172  */
+  tran[@logindx].rate[1] = 100      /*  219  */
 endif
 
 @logindx = casepar[0].ntran
@@ -2650,6 +2853,15 @@ tran[@logindx].pown[1] = 0.000
 tran[@logindx].pown[2] = 0.000
 tran[@logindx].pown[3] = 0.000
 
+@logfrom = number("  70471 WELD_PS      230.00")
+@logto = number("  70470 WELD_PS      115.00")
+$logck = "T1"
+@logtert = number("  71992 WELD_PS       13.80")
+@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
+if (@logindx != -1)
+  tran[@logindx].rates[1] = 332      /*  378  */
+endif
+
 @logfrom = number("  70599 SMOKY_HL     345.00")
 @logto = number("  70396 SMOKY_HL     230.00")
 $logck = "T6"
@@ -2672,41 +2884,17 @@ if (@logindx != -1)
   tran[@logindx].pown[3] = 1      /*  0  */
 endif
 
-@logfrom = number(" 700008 PI_2024_17   230.00")
-@logto = number(" 700009 PI24_17_S1_1  34.50")
-$logck = "1 "
-@logtert = number("  71979 PI24_17_T1    13.80")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700016 PI24_15_SB2  230.00")
-@logto = number(" 700017 PI24_15_SB1   34.50")
+@logfrom = number("  70778 CHEYRGW_CTRL 345.00")
+@logto = number("  70740 CHEYRGW_W2_2  34.50")
 $logck = "T1"
-@logtert = number("  71976 PI24_15_T1    13.80")
+@logtert = number("      0 ------------   0.00")
 @logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
 if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
+  tran[@logindx].stepp = -0.00625      /*  0.00625  */
 endif
 
-@logfrom = number(" 700016 PI24_15_SB2  230.00")
-@logto = number(" 700017 PI24_15_SB1   34.50")
-$logck = "T2"
-@logtert = number("  71977 PI24_15_T2    13.80")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700019 PI24_15_B1_1  34.50")
-@logto = number(" 700020 PI_24_15_B1    0.64")
+@logfrom = number("  70818 MTNBRZ_W1      0.69")
+@logto = number("  70816 MTNBRZ_WTG_1  34.50")
 $logck = "U1"
 @logtert = number("      0 ------------   0.00")
 @logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
@@ -2716,405 +2904,46 @@ if (@logindx != -1)
   tran[@logindx].pown[3] = 1      /*  0  */
 endif
 
-@logfrom = number(" 700036 5RSC24_9_B1    0.63")
-@logto = number(" 700037 5R24_9_B1_1   34.50")
-$logck = "U1"
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].type = 0      /*  1  */
-  tran[@logindx].pown[0] = 0      /*  1  */
-endif
-
-@logfrom = number(" 700038 5R24_9_B1_2   34.50")
-@logto = number(" 700039 5RSC_2024_9  230.00")
+@logfrom = number("  70819 MTNBREEZE    230.00")
+@logto = number("  70815 MTNBRZ_WTG_2  34.50")
 $logck = "T1"
 @logtert = number("      0 ------------   0.00")
 @logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
 if (@logindx != -1)
-  tran[@logindx].type = 0      /*  1  */
-  tran[@logindx].pown[0] = 0      /*  1  */
+  tran[@logindx].pown[1] = 1      /*  0  */
+  tran[@logindx].pown[2] = 1      /*  0  */
+  tran[@logindx].pown[3] = 1      /*  0  */
 endif
 
-@logfrom = number(" 700040 PI_2024_14   345.00")
-@logto = number(" 700041 PI24_14_B1_2  34.50")
+@logfrom = number("  70833 CEDARCK2     230.00")
+@logto = number("  70834 CEDARCK2A     34.50")
 $logck = "T1"
-@logtert = number("  71961 PI24_14_T1    13.80")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700042 PI24_14_B1_1  34.50")
-@logto = number(" 700043 PI_24_14_B1    0.64")
-$logck = "U1"
 @logtert = number("      0 ------------   0.00")
 @logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
 if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
+  tran[@logindx].vtmax = 1.03      /*  1.04  */
+  tran[@logindx].vtmin = 1      /*  1.01  */
+  tran[@logindx].stepp = 0.009375      /*  -0.009375  */
 endif
 
-@logfrom = number(" 700044 PI_24_7_B1     0.90")
-@logto = number(" 700045 PI24_7_B1_1   34.50")
-$logck = "U1"
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700047 PI_2024_7    345.00")
-@logto = number(" 700046 PI24_7_B1_2   34.50")
+@logfrom = number("  70833 CEDARCK2     230.00")
+@logto = number("  70835 CEDARCK2B     34.50")
 $logck = "T1"
-@logtert = number("  71972 PI24_7_T1     13.80")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700048 PI_2024_16   345.00")
-@logto = number(" 700049 PI24_16_B1_2  34.50")
-$logck = "T1"
-@logtert = number("  71973 PI24_16_T1    13.80")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700050 PI24_16_B1_1  34.50")
-@logto = number(" 700051 PI_24_16_B1    0.64")
-$logck = "U1"
 @logtert = number("      0 ------------   0.00")
 @logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
 if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
+  tran[@logindx].vtmax = 1.03      /*  1.04  */
+  tran[@logindx].vtmin = 1      /*  1.01  */
+  tran[@logindx].stepp = 0.009375      /*  -0.009375  */
 endif
 
-@logfrom = number(" 700080 PI24_9_W1_1   34.50")
-@logto = number(" 700079 PI_24_9_W1     0.72")
-$logck = "U1"
+@logfrom = number("  70901 HUSKY        115.00")
+@logto = number("  70898 HUSKY        230.00")
+$logck = "T4"
 @logtert = number("      0 ------------   0.00")
 @logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
 if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700083 PI24_9_W2_1   34.50")
-@logto = number(" 700082 PI_24_9_W2     0.72")
-$logck = "U2"
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700086 PI24_9_W3_1   34.50")
-@logto = number(" 700085 PI_24_9_W3     0.72")
-$logck = "U3"
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700089 PI24_9_W4_1   34.50")
-@logto = number(" 700088 PI_24_9_W4     0.72")
-$logck = "U4"
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700091 PI_2024_9    345.00")
-@logto = number(" 700081 PI24_9_W1_2   34.50")
-$logck = "T1"
-@logtert = number("  71966 PI24_9_T4     13.80")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700091 PI_2024_9    345.00")
-@logto = number(" 700084 PI24_9_W2_2   34.50")
-$logck = "T1"
-@logtert = number("  71965 PI24_9_T3     13.80")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700091 PI_2024_9    345.00")
-@logto = number(" 700087 PI24_9_W3_2   34.50")
-$logck = "T1"
-@logtert = number("  71964 PI24_9_T2     13.80")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700091 PI_2024_9    345.00")
-@logto = number(" 700090 PI24_9_W4_2   34.50")
-$logck = "T1"
-@logtert = number("  71963 PI24_9_T1     13.80")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700108 3RSC_2023_2  230.00")
-@logto = number(" 700109 3R23_2_B1_2   34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700110 3R23_2_B1_1   34.50")
-@logto = number(" 700111 3RSC23_2_B1    0.66")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700112 3RSC_2023_3  345.00")
-@logto = number(" 700113 3R23_3_W1_2   34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700112 3RSC_2023_3  345.00")
-@logto = number(" 700116 3R23_3_W3_2   34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700114 3R23_3_W1_1   34.50")
-@logto = number(" 700115 3RSC23_3_W1    0.69")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700117 3R23_3_W3_1   34.50")
-@logto = number(" 700118 3RSC23_3_W3    0.69")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700119 REPL_21_1_S1   0.66")
-@logto = number(" 700125 RE21_1_S1_1   34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700120 REPL_21_1_S2   0.66")
-@logto = number(" 700126 RE21_1_S2_1   34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700121 REPL_21_1_S3   0.66")
-@logto = number(" 700127 RE21_1_S3_1   34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700122 REPL_21_1_B1   0.69")
-@logto = number(" 700128 RE21_1_B1_1   34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700123 REPL_21_1_B2   0.69")
-@logto = number(" 700129 RE21_1_B2_1   34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700124 REPL_21_1_B3   0.69")
-@logto = number(" 700130 RE21_1_B3_1   34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700134 REPL_2021_1  230.00")
-@logto = number(" 700131 RE21_1_SB1    34.50")
-$logck = "1 "
-@logtert = number("  71959 RE21_1_T1     13.80")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700134 REPL_2021_1  230.00")
-@logto = number(" 700132 RE21_1_SB2    34.50")
-$logck = "1 "
-@logtert = number("  71958 RE21_1_T2     13.80")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700134 REPL_2021_1  230.00")
-@logto = number(" 700133 RE21_1_SB3    34.50")
-$logck = "1 "
-@logtert = number("  71957 RE21_1_T3     13.80")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700140 GI20_10_SB12 230.00")
-@logto = number(" 700141 GI20_10_SB1   34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].rate[0] = 117      /*  195  */
-  tran[@logindx].rate[1] = 156      /*  195  */
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700140 GI20_10_SB12 230.00")
-@logto = number(" 700150 GI20_10_SB2   34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].rate[0] = 117      /*  195  */
-  tran[@logindx].rate[1] = 156      /*  195  */
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700143 GI20_10_S1_1  34.50")
-@logto = number(" 700142 GI_20_10_S1    0.63")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[0] = 0      /*  1  */
-endif
-
-@logfrom = number(" 700145 GI20_10_B1_1  34.50")
-@logto = number(" 700144 GI_20_10_B1    0.90")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[0] = 0      /*  1  */
-endif
-
-@logfrom = number(" 700148 GI20_10_S2_1  34.50")
-@logto = number(" 700146 GI_20_10_S2    0.63")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[0] = 0      /*  1  */
-endif
-
-@logfrom = number(" 700149 GI20_10_B2_1  34.50")
-@logto = number(" 700147 GI_20_10_B2    0.90")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[0] = 0      /*  1  */
+  tran[@logindx].rate[1] = 280      /*  378  */
 endif
 
 @logindx = casepar[0].ntran
@@ -3589,39 +3418,6 @@ tran[@logindx].pown[1] = 1.000
 tran[@logindx].pown[2] = 1.000
 tran[@logindx].pown[3] = 1.000
 
-@logfrom = number(" 700215 REPL_24_1_S1   0.66")
-@logto = number(" 700212 RE24_1_S1_1   34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700216 REPL_24_1_S2   0.66")
-@logto = number(" 700213 RE24_1_S2_1   34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
-@logfrom = number(" 700217 REPL_24_1_S3   0.66")
-@logto = number(" 700214 RE24_1_S3_1   34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  tran[@logindx].pown[1] = 1      /*  0  */
-  tran[@logindx].pown[2] = 1      /*  0  */
-  tran[@logindx].pown[3] = 1      /*  0  */
-endif
-
 @logindx = casepar[0].ntran
 @ret=ins("tran", @logindx-1, 1)
 @logfrom = number(" 700291 PI_2023_7    345.00")
@@ -3681,302 +3477,118 @@ tran[@logindx].pown[1] = 0.000
 tran[@logindx].pown[2] = 0.000
 tran[@logindx].pown[3] = 0.000
 
-@logfrom = number(" 700005 24_5_G_1      34.50")
-@logto = number(" 700004 24_5_G         0.48")
-$logck = "U1"
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  @ret = del("tran", @logindx, 1)
-endif
-
-@logfrom = number(" 700006 PI_2024_5     69.00")
-@logto = number(" 700007 24_5_G_2      34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  @ret = del("tran", @logindx, 1)
-endif
-
-@logfrom = number(" 700021 24_18_SB12   230.00")
-@logto = number(" 700022 24_18_SB1     34.50")
-$logck = "T1"
-@logtert = number("  71974 24_18_T1      13.80")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  @ret = del("tran", @logindx, 1)
-endif
-
-@logfrom = number(" 700021 24_18_SB12   230.00")
-@logto = number(" 700023 24_18_SB2     34.50")
-$logck = "T2"
-@logtert = number("  71975 24_18_T2      13.80")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  @ret = del("tran", @logindx, 1)
-endif
-
-@logfrom = number(" 700024 24_18_S1_1    34.50")
-@logto = number(" 700025 24_18_S1       0.66")
-$logck = "U1"
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  @ret = del("tran", @logindx, 1)
-endif
-
-@logfrom = number(" 700026 24_18_B1_1    34.50")
-@logto = number(" 700027 24_18_B1       0.70")
-$logck = "U2"
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  @ret = del("tran", @logindx, 1)
-endif
-
-@logfrom = number(" 700028 24_18_S2_1    34.50")
-@logto = number(" 700029 24_18_S2       0.66")
-$logck = "U3"
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  @ret = del("tran", @logindx, 1)
-endif
-
-@logfrom = number(" 700030 24_18_B2_1    34.50")
-@logto = number(" 700031 24_18_B2       0.70")
-$logck = "U4"
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  @ret = del("tran", @logindx, 1)
-endif
-
-@logfrom = number(" 700097 PI_2024_11   345.00")
-@logto = number(" 700098 24_11_B_2     34.50")
-$logck = "1 "
-@logtert = number("  71960 24_11_T       13.80")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  @ret = del("tran", @logindx, 1)
-endif
-
-@logfrom = number(" 700099 24_11_B_1     34.50")
-@logto = number(" 700100 24_11_B        0.66")
-$logck = "2 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  @ret = del("tran", @logindx, 1)
-endif
-
-@logfrom = number(" 700219 24_8_SB       34.50")
-@logto = number(" 700218 24_8_SB_1    115.00")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  @ret = del("tran", @logindx, 1)
-endif
-
-@logfrom = number(" 700222 24_8_S         0.63")
-@logto = number(" 700220 24_8_S_1      34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  @ret = del("tran", @logindx, 1)
-endif
-
-@logfrom = number(" 700223 24_8_B         0.43")
-@logto = number(" 700221 24_8_B_1      34.50")
-$logck = "1 "
-@logtert = number("      0 ------------   0.00")
-@logindx = rec_index(0, 2, @logfrom, @logto, $logck, 0, -1, @logtert)
-if (@logindx != -1)
-  @ret = del("tran", @logindx, 1)
-endif
-
-@logfrom = 30      /*  Puget Sound Energy Inc.  */
-@logindx = rec_index(1, 24, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  ba[@logindx].baname = "Puget Sound Energy, Inc.        "      /*  "Puget Sound Energy Inc."  */
-endif
-
-@logfrom = 333      /*  Arlington Valley LLC - AVBA  */
-@logindx = rec_index(1, 24, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  ba[@logindx].baname = "Arlington Valley, LLC - AVBA    "      /*  "Arlington Valley LLC - AVBA"  */
-endif
-
-@logfrom = 555      /*  Griffith Energy LLC  */
-@logindx = rec_index(1, 24, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  ba[@logindx].baname = "Griffith Energy, LLC            "      /*  "Griffith Energy LLC"  */
-endif
-
-@logfrom = 777      /*  Gridforce Energy Management LLC  */
-@logindx = rec_index(1, 24, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  ba[@logindx].baname = "Gridforce Energy Management, LLC"      /*  "Gridforce Energy Management LLC"  */
-endif
-
-@logfrom = 826      /*  NaturEner Power Watch LLC (GWA)  */
-@logindx = rec_index(1, 24, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  ba[@logindx].baname = "NaturEner Power Watch, LLC (GWA)"      /*  "NaturEner Power Watch LLC (GWA)"  */
-endif
-
-@logfrom = 827      /*  NaturEner Wind Watch LLC  */
-@logindx = rec_index(1, 24, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  ba[@logindx].baname = "NaturEner Wind Watch, LLC       "      /*  "NaturEner Wind Watch LLC"  */
-endif
-
-@logfrom = 952      /*  New Harquahala Gen Co LLC-HGBA  */
-@logindx = rec_index(1, 24, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  ba[@logindx].baname = "New Harquahala Gen Co, LLC-HGBA "      /*  "New Harquahala Gen Co LLC-HGBA"  */
-endif
-
-@logfrom = number(" 700001 PI_2024_3_G3  18.00")
-$logid = "G3"
+@logfrom = number("  70069 CABCRKA       13.80")
+$logid = "HA"
 @logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
 if (@logindx != -1)
-  gens[@logindx].pown[0] = 0      /*  1  */
+  gens[@logindx].fueltype[0] = 0      /*  73  */
 endif
 
-@logfrom = number(" 700010 PI_24_17_S1   34.50")
-$logid = "S1"
+@logfrom = number("  70070 CABCRKB       13.80")
+$logid = "HB"
 @logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
 if (@logindx != -1)
-  @logreg = number(" 700008 PI_2024_17   230.00")
-  gens[@logindx].igreg = @logreg      /*   700010 PI_24_17_S1   34.50  */
-  gens[@logindx].fueltype[0] = 0      /*  70  */
+  gens[@logindx].fueltype[0] = 0      /*  73  */
 endif
 
-@logfrom = number(" 700018 PI_24_15_S1   34.50")
-$logid = "S1"
+@logfrom = number("  70188 FT_LUPTN_12   13.20")
+$logid = "G2"
 @logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
 if (@logindx != -1)
-  gens[@logindx].fueltype[0] = 0      /*  70  */
+  gens[@logindx].pmax = 44.099998      /*  44.799999  */
+  gens[@logindx].pmin = 5      /*  4.7  */
 endif
 
-@logfrom = number(" 700020 PI_24_15_B1    0.64")
+@logfrom = number("  70486 ALMSACT2      13.80")
+$logid = "G2"
+@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
+if (@logindx != -1)
+  @logreg = number("  70025 ALMSA_TM     115.00")
+  gens[@logindx].igreg = @logreg      /*    70486 ALMSACT2      13.80  */
+endif
+
+@logfrom = number("  70565 KNUTSON1      13.80")
+$logid = "G1"
+@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
+if (@logindx != -1)
+  @logreg = number("  70565 KNUTSON1      13.80")
+  gens[@logindx].igreg = @logreg      /*    70047 BARR_LAKE    230.00  */
+  gens[@logindx].qmax = 38.700001      /*  51.200001  */
+  gens[@logindx].qmin = -18.300001      /*  -31  */
+  gens[@logindx].pmin = 40      /*  39.5  */
+  gens[@logindx].pf = 1      /*  0  */
+endif
+
+@logfrom = number("  70566 KNUTSON2      13.80")
+$logid = "G2"
+@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
+if (@logindx != -1)
+  @logreg = number("  70566 KNUTSON2      13.80")
+  gens[@logindx].igreg = @logreg      /*    70047 BARR_LAKE    230.00  */
+  gens[@logindx].qmax = 43.299999      /*  51.5  */
+  gens[@logindx].qmin = -26.200003      /*  -31.200003  */
+  gens[@logindx].pf = 1      /*  0  */
+endif
+
+@logfrom = number("  70756 NEPTUNE_B1     0.48")
 $logid = "B1"
 @logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
 if (@logindx != -1)
   gens[@logindx].baseload_flag = 2      /*  0  */
-  gens[@logindx].turbine_type = 20      /*  42  */
-  gens[@logindx].fueltype[0] = 0      /*  84  */
 endif
 
-@logfrom = number(" 700036 5RSC24_9_B1    0.63")
-$logid = "B1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @logreg = number(" 700038 5R24_9_B1_2   34.50")
-  gens[@logindx].igreg = @logreg      /*   700036 5RSC24_9_B1    0.63  */
-  gens[@logindx].pown[0] = 0      /*  1  */
-  gens[@logindx].baseload_flag = 2      /*  0  */
-  gens[@logindx].fueltype[0] = 0      /*  84  */
-endif
-
-@logfrom = number(" 700043 PI_24_14_B1    0.64")
+@logfrom = number("  70761 THNDWLF_B1     0.48")
 $logid = "B1"
 @logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
 if (@logindx != -1)
   gens[@logindx].baseload_flag = 2      /*  0  */
-  gens[@logindx].turbine_type = 20      /*  42  */
-  gens[@logindx].fueltype[0] = 0      /*  84  */
 endif
 
-@logfrom = number(" 700044 PI_24_7_B1     0.90")
-$logid = "B1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  gens[@logindx].baseload_flag = 2      /*  0  */
-  gens[@logindx].fueltype[0] = 0      /*  84  */
-endif
-
-@logfrom = number(" 700051 PI_24_16_B1    0.64")
-$logid = "B1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @logreg = number(" 700048 PI_2024_16   345.00")
-  gens[@logindx].igreg = @logreg      /*   700051 PI_24_16_B1    0.64  */
-  gens[@logindx].baseload_flag = 2      /*  0  */
-  gens[@logindx].fueltype[0] = 0      /*  84  */
-endif
-
-@logfrom = number(" 700055 PI_24_10_B1    0.66")
-$logid = "B1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @logreg = number(" 700052 PI_2024_10   230.00")
-  gens[@logindx].igreg = @logreg      /*   700055 PI_24_10_B1    0.66  */
-  gens[@logindx].baseload_flag = 2      /*  0  */
-  gens[@logindx].fueltype[0] = 0      /*  84  */
-endif
-
-@logfrom = number(" 700057 PI_24_13_W2    0.72")
-$logid = "W2"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @logreg = number(" 700066 PI_2024_13   345.00")
-  gens[@logindx].igreg = @logreg      /*   700057 PI_24_13_W2    0.72  */
-endif
-
-@logfrom = number(" 700060 PI_24_13_W3    0.72")
-$logid = "W3"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @logreg = number(" 700066 PI_2024_13   345.00")
-  gens[@logindx].igreg = @logreg      /*   700060 PI_24_13_W3    0.72  */
-endif
-
-@logfrom = number(" 700063 PI_24_13_W4    0.72")
-$logid = "W4"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @logreg = number(" 700066 PI_2024_13   345.00")
-  gens[@logindx].igreg = @logreg      /*   700063 PI_24_13_W4    0.72  */
-endif
-
-@logfrom = number(" 700067 PI_24_13_W1    0.72")
+@logfrom = number("  70825 CEDAR2A_W1     0.66")
 $logid = "W1"
 @logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
 if (@logindx != -1)
-  @logreg = number(" 700066 PI_2024_13   345.00")
-  gens[@logindx].igreg = @logreg      /*   700067 PI_24_13_W1    0.72  */
-endif
-
-@logfrom = number(" 700076 PI_24_12_W1    0.72")
-$logid = "W1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @logreg = number(" 700069 PI_2024_12   345.00")
-  gens[@logindx].igreg = @logreg      /*   700076 PI_24_12_W1    0.72  */
+  gens[@logindx].baseload_flag = 0      /*  2  */
   gens[@logindx].fueltype[0] = 0      /*  71  */
 endif
 
-@logfrom = number(" 700077 PI_24_12_W2    0.72")
-$logid = "W2"
+@logfrom = number("  70826 CEDAR2B_W56    0.69")
+$logid = "W5"
 @logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
 if (@logindx != -1)
-  @logreg = number(" 700069 PI_2024_12   345.00")
-  gens[@logindx].igreg = @logreg      /*   700077 PI_24_12_W2    0.72  */
-  gens[@logindx].fueltype[0] = 0      /*  71  */
+  gens[@logindx].baseload_flag = 0      /*  2  */
 endif
 
-@logfrom = number(" 700078 PI_24_12_W3    0.72")
+@logfrom = number("  70826 CEDAR2B_W56    0.69")
+$logid = "W6"
+@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
+if (@logindx != -1)
+  gens[@logindx].baseload_flag = 0      /*  2  */
+endif
+
+@logfrom = number("  70827 CEDAR2B_W3     0.66")
 $logid = "W3"
 @logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
 if (@logindx != -1)
-  @logreg = number(" 700069 PI_2024_12   345.00")
-  gens[@logindx].igreg = @logreg      /*   700078 PI_24_12_W3    0.72  */
+  gens[@logindx].baseload_flag = 0      /*  2  */
   gens[@logindx].fueltype[0] = 0      /*  71  */
+endif
+
+@logfrom = number("  70933 ALMSA_S1       0.48")
+$logid = "S1"
+@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
+if (@logindx != -1)
+  @logreg = number(" 700180 ALAMOSA_SLR  115.00")
+  gens[@logindx].igreg = @logreg      /*    70933 ALMSA_S1       0.48  */
+  gens[@logindx].fueltype[0] = 0      /*  70  */
+endif
+
+@logfrom = number("  70935 SUNPOWER      34.50")
+$logid = "S1"
+@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
+if (@logindx != -1)
+  gens[@logindx].qmax = 14.854      /*  0  */
+  gens[@logindx].qmin = -14.854      /*  0  */
 endif
 
 @logfrom = number(" 700104 3RSC23_1_S1    0.66")
@@ -4028,102 +3640,6 @@ if (@logindx != -1)
   gens[@logindx].igreg = @logreg      /*   700118 3RSC23_3_W3    0.69  */
   gens[@logindx].ba = 0      /*  65  */
   gens[@logindx].fueltype[0] = 0      /*  71  */
-endif
-
-@logfrom = number(" 700119 REPL_21_1_S1   0.66")
-$logid = "S1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  gens[@logindx].fueltype[0] = 0      /*  70  */
-endif
-
-@logfrom = number(" 700120 REPL_21_1_S2   0.66")
-$logid = "S2"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  gens[@logindx].fueltype[0] = 0      /*  70  */
-endif
-
-@logfrom = number(" 700121 REPL_21_1_S3   0.66")
-$logid = "S3"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @logreg = number(" 700120 REPL_21_1_S2   0.66")
-  gens[@logindx].igreg = @logreg      /*   700121 REPL_21_1_S3   0.66  */
-  gens[@logindx].fueltype[0] = 0      /*  70  */
-endif
-
-@logfrom = number(" 700122 REPL_21_1_B1   0.69")
-$logid = "B1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  gens[@logindx].baseload_flag = 2      /*  0  */
-  gens[@logindx].fueltype[0] = 0      /*  84  */
-endif
-
-@logfrom = number(" 700123 REPL_21_1_B2   0.69")
-$logid = "B2"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  gens[@logindx].baseload_flag = 2      /*  0  */
-  gens[@logindx].fueltype[0] = 0      /*  84  */
-endif
-
-@logfrom = number(" 700124 REPL_21_1_B3   0.69")
-$logid = "B3"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  gens[@logindx].baseload_flag = 2      /*  0  */
-  gens[@logindx].fueltype[0] = 0      /*  84  */
-endif
-
-@logfrom = number(" 700142 GI_20_10_S1    0.63")
-$logid = "S1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @logreg = number(" 700140 GI20_10_SB12 230.00")
-  gens[@logindx].igreg = @logreg      /*   700142 GI_20_10_S1    0.63  */
-  gens[@logindx].turbine_type = 20      /*  31  */
-  gens[@logindx].fueltype[0] = 0      /*  70  */
-endif
-
-@logfrom = number(" 700144 GI_20_10_B1    0.90")
-$logid = "B1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @logreg = number(" 700140 GI20_10_SB12 230.00")
-  gens[@logindx].igreg = @logreg      /*   700144 GI_20_10_B1    0.90  */
-  gens[@logindx].pown[0] = 0      /*  1  */
-  gens[@logindx].baseload_flag = 2      /*  0  */
-  gens[@logindx].fueltype[0] = 0      /*  84  */
-endif
-
-@logfrom = number(" 700146 GI_20_10_S2    0.63")
-$logid = "S2"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @logreg = number(" 700140 GI20_10_SB12 230.00")
-  gens[@logindx].igreg = @logreg      /*   700146 GI_20_10_S2    0.63  */
-  gens[@logindx].turbine_type = 20      /*  31  */
-  gens[@logindx].fueltype[0] = 0      /*  70  */
-endif
-
-@logfrom = number(" 700147 GI_20_10_B2    0.90")
-$logid = "B2"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @logreg = number(" 700140 GI20_10_SB12 230.00")
-  gens[@logindx].igreg = @logreg      /*   700147 GI_20_10_B2    0.90  */
-  gens[@logindx].pown[0] = 0      /*  1  */
-  gens[@logindx].baseload_flag = 2      /*  0  */
-  gens[@logindx].fueltype[0] = 0      /*  84  */
-endif
-
-@logfrom = number(" 700151 GI_2021_6_S1  34.50")
-$logid = "S1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  gens[@logindx].fueltype[0] = 0      /*  70  */
 endif
 
 @logindx = casepar[0].ngen
@@ -4326,61 +3842,6 @@ gens[@logindx].fueltype[2] = 0
 gens[@logindx].qtab = 0
 gens[@logindx].pf = 0.000000
 
-@logfrom = number(" 700182 5RSC24_28_W1   0.69")
-$logid = "W1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @logreg = number(" 700185 5RSC_24_28   345.00")
-  gens[@logindx].igreg = @logreg      /*   700182 5RSC24_28_W1   0.69  */
-  gens[@logindx].turbine_type = 20      /*  23  */
-  gens[@logindx].fueltype[0] = 0      /*  71  */
-endif
-
-@logfrom = number(" 700191 PI_23_2_B1     0.60")
-$logid = "B1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  gens[@logindx].baseload_flag = 2      /*  0  */
-  gens[@logindx].turbine_type = 20      /*  42  */
-  gens[@logindx].fueltype[0] = 0      /*  84  */
-endif
-
-@logfrom = number(" 700196 PI_24_19_W1    0.72")
-$logid = "W1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  gens[@logindx].fueltype[0] = 0      /*  71  */
-endif
-
-@logfrom = number(" 700215 REPL_24_1_S1   0.66")
-$logid = "S1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  gens[@logindx].fueltype[0] = 0      /*  70  */
-endif
-
-@logfrom = number(" 700216 REPL_24_1_S2   0.66")
-$logid = "S2"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  gens[@logindx].fueltype[0] = 0      /*  70  */
-endif
-
-@logfrom = number(" 700217 REPL_24_1_S3   0.66")
-$logid = "S3"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  gens[@logindx].fueltype[0] = 0      /*  70  */
-endif
-
-@logfrom = number(" 700262 SUN_MTN_S      0.66")
-$logid = "S1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @logreg = number(" 700259 SUN_MTN_S_3  230.00")
-  gens[@logindx].igreg = @logreg      /*   700262 SUN_MTN_S      0.66  */
-endif
-
 @logindx = casepar[0].ngen
 @ret=ins("gens", @logindx-1, 1)
 @logbgen = number(" 700293 PI_23_7_S1    34.50")
@@ -4431,76 +3892,6 @@ gens[@logindx].fueltype[2] = 0
 gens[@logindx].qtab = 0
 gens[@logindx].pf = 0.000000
 
-@logfrom = number(" 700300 CEDAR2A_W2     0.66")
-$logid = "W2"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  gens[@logindx].baseload_flag = 0      /*  2  */
-endif
-
-@logfrom = number(" 700301 CEDAR2B_W4     0.66")
-$logid = "W4"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  gens[@logindx].baseload_flag = 0      /*  2  */
-endif
-
-@logfrom = number(" 700004 24_5_G         0.48")
-$logid = "G1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @ret = del("gens", @logindx, 1)
-endif
-
-@logfrom = number(" 700025 24_18_S1       0.66")
-$logid = "S1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @ret = del("gens", @logindx, 1)
-endif
-
-@logfrom = number(" 700027 24_18_B1       0.70")
-$logid = "B1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @ret = del("gens", @logindx, 1)
-endif
-
-@logfrom = number(" 700029 24_18_S2       0.66")
-$logid = "S2"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @ret = del("gens", @logindx, 1)
-endif
-
-@logfrom = number(" 700031 24_18_B2       0.70")
-$logid = "B2"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @ret = del("gens", @logindx, 1)
-endif
-
-@logfrom = number(" 700100 24_11_B        0.66")
-$logid = "B1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @ret = del("gens", @logindx, 1)
-endif
-
-@logfrom = number(" 700222 24_8_S         0.63")
-$logid = "S1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @ret = del("gens", @logindx, 1)
-endif
-
-@logfrom = number(" 700223 24_8_B         0.43")
-$logid = "B1"
-@logindx = rec_index(0, 3, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @ret = del("gens", @logindx, 1)
-endif
-
 @logindx = casepar[0].nload
 @ret=ins("load", @logindx-1, 1)
 @loglbus = number("  70018 SODA_LAKES   230.00")
@@ -4531,6 +3922,34 @@ load[@logindx].clzone = "HID_RES "
 
 @logindx = casepar[0].nload
 @ret=ins("load", @logindx-1, 1)
+@loglbus = number("  70081 FAIR_GRNDS   115.00")
+load[@logindx].lbus = @loglbus
+load[@logindx].id = "TS"
+load[@logindx].st = 1
+load[@logindx].area = 70
+load[@logindx].zone = 700
+load[@logindx].ba = 65
+load[@logindx].nonconf = 0
+load[@logindx].lid = "HID_RES "
+load[@logindx].nown = 73
+load[@logindx].clzone = "HID_RES "
+
+@logindx = casepar[0].nload
+@ret=ins("load", @logindx-1, 1)
+@loglbus = number("  70140 DEBEQUE       69.00")
+load[@logindx].lbus = @loglbus
+load[@logindx].id = "P2"
+load[@logindx].st = 0
+load[@logindx].area = 70
+load[@logindx].zone = 708
+load[@logindx].ba = 65
+load[@logindx].nonconf = 0
+load[@logindx].lid = "RMN_MIX "
+load[@logindx].nown = 65
+load[@logindx].clzone = "RMN_MIX "
+
+@logindx = casepar[0].nload
+@ret=ins("load", @logindx-1, 1)
 @loglbus = number("  70143 DEL_NORTE     69.00")
 load[@logindx].lbus = @loglbus
 load[@logindx].id = "P1"
@@ -4556,6 +3975,34 @@ load[@logindx].nonconf = 1
 load[@logindx].lid = "IND_OTH "
 load[@logindx].nown = 65
 load[@logindx].clzone = "IND_OTH "
+
+@logindx = casepar[0].nload
+@ret=ins("load", @logindx-1, 1)
+@loglbus = number("  70191 FT_LUPTON_1  115.00")
+load[@logindx].lbus = @loglbus
+load[@logindx].id = "TS"
+load[@logindx].st = 1
+load[@logindx].area = 70
+load[@logindx].zone = 706
+load[@logindx].ba = 65
+load[@logindx].nonconf = 0
+load[@logindx].lid = "HID_RES "
+load[@logindx].nown = 73
+load[@logindx].clzone = "HID_RES "
+
+@logindx = casepar[0].nload
+@ret=ins("load", @logindx-1, 1)
+@loglbus = number("  70194 FULTONTS     115.00")
+load[@logindx].lbus = @loglbus
+load[@logindx].id = "TS"
+load[@logindx].st = 1
+load[@logindx].area = 70
+load[@logindx].zone = 700
+load[@logindx].ba = 65
+load[@logindx].nonconf = 0
+load[@logindx].lid = "HID_RES "
+load[@logindx].nown = 73
+load[@logindx].clzone = "HID_RES "
 
 @logindx = casepar[0].nload
 @ret=ins("load", @logindx-1, 1)
@@ -4636,6 +4083,20 @@ endif
 
 @logindx = casepar[0].nload
 @ret=ins("load", @logindx-1, 1)
+@loglbus = number("  70307 PLATTE_VLY   115.00")
+load[@logindx].lbus = @loglbus
+load[@logindx].id = "TS"
+load[@logindx].st = 1
+load[@logindx].area = 70
+load[@logindx].zone = 700
+load[@logindx].ba = 65
+load[@logindx].nonconf = 0
+load[@logindx].lid = "HID_MIX "
+load[@logindx].nown = 73
+load[@logindx].clzone = "HID_MIX "
+
+@logindx = casepar[0].nload
+@ret=ins("load", @logindx-1, 1)
 @loglbus = number("  70388 SILT_USBR     69.00")
 load[@logindx].lbus = @loglbus
 load[@logindx].id = "NT"
@@ -4692,6 +4153,34 @@ load[@logindx].clzone = "PPA_AUX "
 
 @logindx = casepar[0].nload
 @ret=ins("load", @logindx-1, 1)
+@loglbus = number("  70609 SILVER_SADL  230.00")
+load[@logindx].lbus = @loglbus
+load[@logindx].id = "TS"
+load[@logindx].st = 1
+load[@logindx].area = 70
+load[@logindx].zone = 700
+load[@logindx].ba = 65
+load[@logindx].nonconf = 0
+load[@logindx].lid = "HID_RES "
+load[@logindx].nown = 73
+load[@logindx].clzone = "HID_RES "
+
+@logindx = casepar[0].nload
+@ret=ins("load", @logindx-1, 1)
+@loglbus = number("  70661 GLDNWST_W_2   34.50")
+load[@logindx].lbus = @loglbus
+load[@logindx].id = "SS"
+load[@logindx].st = 1
+load[@logindx].area = 70
+load[@logindx].zone = 757
+load[@logindx].ba = 65
+load[@logindx].nonconf = 1
+load[@logindx].lid = "PPA_AUX "
+load[@logindx].nown = 73
+load[@logindx].clzone = "PPA_AUX "
+
+@logindx = casepar[0].nload
+@ret=ins("load", @logindx-1, 1)
 @loglbus = number("  70806 LACOMBE_2    230.00")
 load[@logindx].lbus = @loglbus
 load[@logindx].id = "P2"
@@ -4718,6 +4207,13 @@ load[@logindx].lid = "HID_MIX "
 load[@logindx].nown = 65
 load[@logindx].clzone = "HID_MIX "
 
+@logfrom = number("  70879 R_2023_07    230.00")
+$logid = "IN"
+@logindx = rec_index(0, 4, @logfrom, -1, $logid, 0, -1)
+if (@logindx != -1)
+  load[@logindx].ba = 0      /*  65  */
+endif
+
 @logindx = casepar[0].nload
 @ret=ins("load", @logindx-1, 1)
 @loglbus = number("  70901 HUSKY        115.00")
@@ -4731,6 +4227,20 @@ load[@logindx].nonconf = 0
 load[@logindx].lid = "HID_MIX "
 load[@logindx].nown = 65
 load[@logindx].clzone = "HID_MIX "
+
+@logfrom = number("  72025 PRARI_TS     115.00")
+$logid = "TS"
+@logindx = rec_index(0, 4, @logfrom, -1, $logid, 0, -1)
+if (@logindx != -1)
+  load[@logindx].zone = 754      /*  700  */
+endif
+
+@logfrom = number("  72026 REUNION      230.00")
+$logid = "TS"
+@logindx = rec_index(0, 4, @logfrom, -1, $logid, 0, -1)
+if (@logindx != -1)
+  load[@logindx].zone = 754      /*  700  */
+endif
 
 @logfrom = number(" 700038 5R24_9_B1_2   34.50")
 $logid = "SS"
@@ -4847,8 +4357,29 @@ if (@logindx != -1)
   @ret = del("load", @logindx, 1)
 endif
 
+@logfrom = number("  70081 FAIR_GRNDS   115.00")
+$logid = "UN"
+@logindx = rec_index(0, 4, @logfrom, -1, $logid, 0, -1)
+if (@logindx != -1)
+  @ret = del("load", @logindx, 1)
+endif
+
+@logfrom = number("  70194 FULTONTS     115.00")
+$logid = "UN"
+@logindx = rec_index(0, 4, @logfrom, -1, $logid, 0, -1)
+if (@logindx != -1)
+  @ret = del("load", @logindx, 1)
+endif
+
 @logfrom = number("  70211 GUNBARREL_2  230.00")
 $logid = "TS"
+@logindx = rec_index(0, 4, @logfrom, -1, $logid, 0, -1)
+if (@logindx != -1)
+  @ret = del("load", @logindx, 1)
+endif
+
+@logfrom = number("  70307 PLATTE_VLY   115.00")
+$logid = "UN"
 @logindx = rec_index(0, 4, @logfrom, -1, $logid, 0, -1)
 if (@logindx != -1)
   @ret = del("load", @logindx, 1)
@@ -4868,35 +4399,21 @@ if (@logindx != -1)
   @ret = del("load", @logindx, 1)
 endif
 
-@logfrom = number(" 700022 24_18_SB1     34.50")
-$logid = "SS"
+@logfrom = number("  70609 SILVER_SADL  230.00")
+$logid = "UN"
 @logindx = rec_index(0, 4, @logfrom, -1, $logid, 0, -1)
 if (@logindx != -1)
   @ret = del("load", @logindx, 1)
 endif
 
-@logfrom = number(" 700023 24_18_SB2     34.50")
-$logid = "SS"
-@logindx = rec_index(0, 4, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @ret = del("load", @logindx, 1)
-endif
-
-@logfrom = number(" 700098 24_11_B_2     34.50")
-$logid = "SS"
-@logindx = rec_index(0, 4, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @ret = del("load", @logindx, 1)
-endif
-
-@logfrom = number("  70446 ARRIBA_W2_2   34.50")
-@logto = number("      0 ------------   0.00")
-$logck = "0 "
-$logid = "v "
-@logsec = 0
+@logfrom = number("  77656 UTE_GRND_JN  345.00")
+@logto = number("  77660 RIFLE_CU     345.00")
+$logck = "1 "
+$logid = "t1"
+@logsec = 1
 @logindx = shunt_index(0, @logfrom, @logto, $logck, $logid, @logsec, -1)
 if (@logindx != -1)
-  @ret = del("shunt", @logindx, 1)
+  shunt[@logindx].ba = 26      /*  65  */
 endif
 
 @logfrom = number("  70108 CHEROKEE_S   115.00")
@@ -4955,6 +4472,13 @@ if (@logindx != -1)
   svd[@logindx].b = 0.26      /*  -0.1  */
 endif
 
+@logfrom = number("  70740 CHEYRGW_W2_2  34.50")
+$logid = "v "
+@logindx = rec_index(0, 6, @logfrom, -1, $logid, 0, -1)
+if (@logindx != -1)
+  svd[@logindx].b = 0.16      /*  -0.12  */
+endif
+
 @logfrom = number("  70822 CEDARCK_CAP  230.00")
 $logid = "v "
 @logindx = rec_index(0, 6, @logfrom, -1, $logid, 0, -1)
@@ -4990,116 +4514,6 @@ if (@logindx != -1)
   svd[@logindx].vband = 0.025      /*  0  */
   svd[@logindx].beffmin = -0.292466      /*  -0.073529  */
   svd[@logindx].beffmax = 0.072466      /*  0.073529  */
-endif
-
-@logfrom = number(" 700049 PI24_16_B1_2  34.50")
-$logid = "v "
-@logindx = rec_index(0, 6, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  svd[@logindx].b = 0.71      /*  0  */
-endif
-
-@logindx = casepar[0].nsvd
-@ret = ins("svd", @logindx-1, 1)
-@logbus = number(" 700158 11_2&7_B1_1   34.50")
-@logreg = number(" 700158 11_2&7_B1_1   34.50")
-svd[@logindx].ibus = @logbus
-svd[@logindx].id = "v "
-svd[@logindx].type = 4
-svd[@logindx].kreg = @logreg
-svd[@logindx].area = 70
-svd[@logindx].zone = 700
-svd[@logindx].b = 0.000000
-svd[@logindx].bmin = -0.200000
-svd[@logindx].bmax = 0.200000
-svd[@logindx].vband = 0.025000
-svd[@logindx].ba = 0
-svd[@logindx].bstep[0] = -0.200000
-svd[@logindx].bstep[1] = 0.200000
-svd[@logindx].bstep[2] = 0.000000
-svd[@logindx].bstep[3] = 0.000000
-svd[@logindx].bstep[4] = 0.000000
-svd[@logindx].bstep[5] = 0.000000
-svd[@logindx].bstep[6] = 0.000000
-svd[@logindx].bstep[7] = 0.000000
-svd[@logindx].bstep[8] = 0.000000
-svd[@logindx].bstep[9] = 0.000000
-svd[@logindx].nstep[0] = 1
-svd[@logindx].nstep[1] = 1
-svd[@logindx].nstep[2] = 0
-svd[@logindx].nstep[3] = 0
-svd[@logindx].nstep[4] = 0
-svd[@logindx].nstep[5] = 0
-svd[@logindx].nstep[6] = 0
-svd[@logindx].nstep[7] = 0
-svd[@logindx].nstep[8] = 0
-svd[@logindx].nstep[9] = 0
-svd[@logindx].beffmin = -0.200000
-svd[@logindx].beffmax = 0.200000
-svd[@logindx].nown[0] = 770
-svd[@logindx].nown[1] = 0
-svd[@logindx].nown[2] = 0
-svd[@logindx].nown[3] = 0
-svd[@logindx].pown[0] = 1.000
-svd[@logindx].pown[1] = 0.000
-svd[@logindx].pown[2] = 0.000
-svd[@logindx].pown[3] = 0.000
-svd[@logindx].vrefmin = 0.000000
-svd[@logindx].vrefmax = 0.000000
-
-@logindx = casepar[0].nsvd
-@ret = ins("svd", @logindx-1, 1)
-@logbus = number(" 700159 11_2&7_B2_1   34.50")
-@logreg = number(" 700159 11_2&7_B2_1   34.50")
-svd[@logindx].ibus = @logbus
-svd[@logindx].id = "v "
-svd[@logindx].type = 4
-svd[@logindx].kreg = @logreg
-svd[@logindx].area = 70
-svd[@logindx].zone = 700
-svd[@logindx].b = 0.000000
-svd[@logindx].bmin = -0.200000
-svd[@logindx].bmax = 0.000000
-svd[@logindx].vband = 0.025000
-svd[@logindx].ba = 0
-svd[@logindx].bstep[0] = -0.200000
-svd[@logindx].bstep[1] = 0.000000
-svd[@logindx].bstep[2] = 0.000000
-svd[@logindx].bstep[3] = 0.000000
-svd[@logindx].bstep[4] = 0.000000
-svd[@logindx].bstep[5] = 0.000000
-svd[@logindx].bstep[6] = 0.000000
-svd[@logindx].bstep[7] = 0.000000
-svd[@logindx].bstep[8] = 0.000000
-svd[@logindx].bstep[9] = 0.000000
-svd[@logindx].nstep[0] = 1
-svd[@logindx].nstep[1] = 0
-svd[@logindx].nstep[2] = 0
-svd[@logindx].nstep[3] = 0
-svd[@logindx].nstep[4] = 0
-svd[@logindx].nstep[5] = 0
-svd[@logindx].nstep[6] = 0
-svd[@logindx].nstep[7] = 0
-svd[@logindx].nstep[8] = 0
-svd[@logindx].nstep[9] = 0
-svd[@logindx].beffmin = -0.200000
-svd[@logindx].beffmax = 0.000000
-svd[@logindx].nown[0] = 770
-svd[@logindx].nown[1] = 0
-svd[@logindx].nown[2] = 0
-svd[@logindx].nown[3] = 0
-svd[@logindx].pown[0] = 1.000
-svd[@logindx].pown[1] = 0.000
-svd[@logindx].pown[2] = 0.000
-svd[@logindx].pown[3] = 0.000
-svd[@logindx].vrefmin = 0.000000
-svd[@logindx].vrefmax = 0.000000
-
-@logfrom = number(" 700260 SUN_MTN_S_2   34.50")
-$logid = "v "
-@logindx = rec_index(0, 6, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  svd[@logindx].b = 0      /*  0.4  */
 endif
 
 @logindx = casepar[0].nsvd
@@ -5150,1210 +4564,3 @@ svd[@logindx].pown[3] = 0.000
 svd[@logindx].vrefmin = 0.970000
 svd[@logindx].vrefmax = 1.010000
 
-@logfrom = number(" 700007 24_5_G_2      34.50")
-$logid = "v "
-@logindx = rec_index(0, 6, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @ret = del("svd", @logindx, 1)
-endif
-
-@logfrom = number(" 700219 24_8_SB       34.50")
-$logid = "v "
-@logindx = rec_index(0, 6, @logfrom, -1, $logid, 0, -1)
-if (@logindx != -1)
-  @ret = del("svd", @logindx, 1)
-endif
-
-@logindx = casepar[0].nztab
-@ret = ins("tztab", @logindx-1, 1)
-tztab[@logindx].ta =  
-tztab[@logindx].extnum = 20
-tztab[@logindx].t[0] = 1
-tztab[@logindx].t[1] = 1.786000
-tztab[@logindx].t[2] = 1.503000
-tztab[@logindx].t[3] = 1.293000
-tztab[@logindx].t[4] = 1.126000
-tztab[@logindx].t[5] = 1.032000
-tztab[@logindx].t[6] = 1.000000
-tztab[@logindx].t[7] = 1.032000
-tztab[@logindx].t[8] = 1.126000
-tztab[@logindx].t[9] = 1.293000
-tztab[@logindx].t[10] = 1.503000
-tztab[@logindx].f[0] = -45.000000
-tztab[@logindx].f[1] = -36.000000
-tztab[@logindx].f[2] = -27.000000
-tztab[@logindx].f[3] = -18.000000
-tztab[@logindx].f[4] = -9.000000
-tztab[@logindx].f[5] = 0.000000
-tztab[@logindx].f[6] = 9.000000
-tztab[@logindx].f[7] = 18.000000
-tztab[@logindx].f[8] = 27.000000
-tztab[@logindx].f[9] = 36.000000
-tztab[@logindx].f[10] = 45.000000
-
-@logindx = casepar[0].nztab
-@ret = ins("tztab", @logindx-1, 1)
-tztab[@logindx].ta =  
-tztab[@logindx].extnum = 21
-tztab[@logindx].t[0] = 1
-tztab[@logindx].t[1] = 1.970000
-tztab[@logindx].t[2] = 1.610000
-tztab[@logindx].t[3] = 1.460000
-tztab[@logindx].t[4] = 1.140000
-tztab[@logindx].t[5] = 1.000000
-tztab[@logindx].t[6] = 1.140000
-tztab[@logindx].t[7] = 1.460000
-tztab[@logindx].t[8] = 1.610000
-tztab[@logindx].t[9] = 1.970000
-tztab[@logindx].t[10] = 0.000000
-tztab[@logindx].f[0] = -74.500000
-tztab[@logindx].f[1] = -59.400002
-tztab[@logindx].f[2] = -41.599998
-tztab[@logindx].f[3] = -21.500000
-tztab[@logindx].f[4] = 0.000000
-tztab[@logindx].f[5] = 21.500000
-tztab[@logindx].f[6] = 41.599998
-tztab[@logindx].f[7] = 59.400002
-tztab[@logindx].f[8] = 74.500000
-tztab[@logindx].f[9] = 0.000000
-tztab[@logindx].f[10] = 0.000000
-
-@logindx = casepar[0].nztab
-@ret = ins("tztab", @logindx-1, 1)
-tztab[@logindx].ta =  
-tztab[@logindx].extnum = 22
-tztab[@logindx].t[0] = 1
-tztab[@logindx].t[1] = 1.870000
-tztab[@logindx].t[2] = 1.540000
-tztab[@logindx].t[3] = 1.430000
-tztab[@logindx].t[4] = 1.120000
-tztab[@logindx].t[5] = 1.000000
-tztab[@logindx].t[6] = 1.120000
-tztab[@logindx].t[7] = 1.430000
-tztab[@logindx].t[8] = 1.540000
-tztab[@logindx].t[9] = 1.870000
-tztab[@logindx].t[10] = 0.000000
-tztab[@logindx].f[0] = -75.400002
-tztab[@logindx].f[1] = -59.299999
-tztab[@logindx].f[2] = -41.500000
-tztab[@logindx].f[3] = -21.500000
-tztab[@logindx].f[4] = 0.000000
-tztab[@logindx].f[5] = 21.500000
-tztab[@logindx].f[6] = 41.500000
-tztab[@logindx].f[7] = 59.299999
-tztab[@logindx].f[8] = 75.400002
-tztab[@logindx].f[9] = 0.000000
-tztab[@logindx].f[10] = 0.000000
-
-@logindx = casepar[0].nztab
-@ret = ins("tztab", @logindx-1, 1)
-tztab[@logindx].ta =  
-tztab[@logindx].extnum = 23
-tztab[@logindx].t[0] = 1
-tztab[@logindx].t[1] = 2.090000
-tztab[@logindx].t[2] = 1.690000
-tztab[@logindx].t[3] = 1.520000
-tztab[@logindx].t[4] = 1.160000
-tztab[@logindx].t[5] = 1.000000
-tztab[@logindx].t[6] = 1.150000
-tztab[@logindx].t[7] = 1.520000
-tztab[@logindx].t[8] = 1.690000
-tztab[@logindx].t[9] = 2.080000
-tztab[@logindx].t[10] = 0.000000
-tztab[@logindx].f[0] = -74.540001
-tztab[@logindx].f[1] = -59.430000
-tztab[@logindx].f[2] = -41.660000
-tztab[@logindx].f[3] = -21.540001
-tztab[@logindx].f[4] = 0.000000
-tztab[@logindx].f[5] = 21.540001
-tztab[@logindx].f[6] = 41.660000
-tztab[@logindx].f[7] = 59.430000
-tztab[@logindx].f[8] = 74.540001
-tztab[@logindx].f[9] = 0.000000
-tztab[@logindx].f[10] = 0.000000
-
-@logindx = casepar[0].nztab
-@ret = ins("tztab", @logindx-1, 1)
-tztab[@logindx].ta =  
-tztab[@logindx].extnum = 25
-tztab[@logindx].t[0] = 1
-tztab[@logindx].t[1] = 3.212700
-tztab[@logindx].t[2] = 1.000000
-tztab[@logindx].t[3] = 3.383900
-tztab[@logindx].t[4] = 0.000000
-tztab[@logindx].t[5] = 0.000000
-tztab[@logindx].t[6] = 0.000000
-tztab[@logindx].t[7] = 0.000000
-tztab[@logindx].t[8] = 0.000000
-tztab[@logindx].t[9] = 0.000000
-tztab[@logindx].t[10] = 0.000000
-tztab[@logindx].f[0] = -46.200001
-tztab[@logindx].f[1] = 0.000000
-tztab[@logindx].f[2] = 46.200001
-tztab[@logindx].f[3] = 0.000000
-tztab[@logindx].f[4] = 0.000000
-tztab[@logindx].f[5] = 0.000000
-tztab[@logindx].f[6] = 0.000000
-tztab[@logindx].f[7] = 0.000000
-tztab[@logindx].f[8] = 0.000000
-tztab[@logindx].f[9] = 0.000000
-tztab[@logindx].f[10] = 0.000000
-
-@logindx = casepar[0].nztab
-@ret = ins("tztab", @logindx-1, 1)
-tztab[@logindx].ta =  
-tztab[@logindx].extnum = 29
-tztab[@logindx].t[0] = 1
-tztab[@logindx].t[1] = 2.000000
-tztab[@logindx].t[2] = 1.733000
-tztab[@logindx].t[3] = 1.358000
-tztab[@logindx].t[4] = 1.054000
-tztab[@logindx].t[5] = 1.024000
-tztab[@logindx].t[6] = 1.000000
-tztab[@logindx].t[7] = 1.024000
-tztab[@logindx].t[8] = 1.054000
-tztab[@logindx].t[9] = 1.358000
-tztab[@logindx].t[10] = 1.733000
-tztab[@logindx].f[0] = -40.000000
-tztab[@logindx].f[1] = -35.000000
-tztab[@logindx].f[2] = -25.000000
-tztab[@logindx].f[3] = -12.500000
-tztab[@logindx].f[4] = -7.500000
-tztab[@logindx].f[5] = 0.000000
-tztab[@logindx].f[6] = 7.500000
-tztab[@logindx].f[7] = 12.500000
-tztab[@logindx].f[8] = 25.000000
-tztab[@logindx].f[9] = 35.000000
-tztab[@logindx].f[10] = 40.000000
-
-@logindx = casepar[0].nztab
-@ret = ins("tztab", @logindx-1, 1)
-tztab[@logindx].ta =  
-tztab[@logindx].extnum = 31
-tztab[@logindx].t[0] = 1
-tztab[@logindx].t[1] = 1.270000
-tztab[@logindx].t[2] = 1.166000
-tztab[@logindx].t[3] = 1.082000
-tztab[@logindx].t[4] = 1.061000
-tztab[@logindx].t[5] = 1.000000
-tztab[@logindx].t[6] = 1.061000
-tztab[@logindx].t[7] = 1.082000
-tztab[@logindx].t[8] = 1.166000
-tztab[@logindx].t[9] = 1.270000
-tztab[@logindx].t[10] = 1.000000
-tztab[@logindx].f[0] = -24.100000
-tztab[@logindx].f[1] = -18.100000
-tztab[@logindx].f[2] = -12.200000
-tztab[@logindx].f[3] = -6.000000
-tztab[@logindx].f[4] = 0.000000
-tztab[@logindx].f[5] = 6.000000
-tztab[@logindx].f[6] = 12.200000
-tztab[@logindx].f[7] = 18.100000
-tztab[@logindx].f[8] = 24.100000
-tztab[@logindx].f[9] = 1.000000
-tztab[@logindx].f[10] = 1.000000
-
-@logindx = casepar[0].nztab
-@ret = ins("tztab", @logindx-1, 1)
-tztab[@logindx].ta =  
-tztab[@logindx].extnum = 32
-tztab[@logindx].t[0] = 1
-tztab[@logindx].t[1] = 20.000000
-tztab[@logindx].t[2] = 6.000000
-tztab[@logindx].t[3] = 1.000000
-tztab[@logindx].t[4] = 6.000000
-tztab[@logindx].t[5] = 20.000000
-tztab[@logindx].t[6] = 0.000000
-tztab[@logindx].t[7] = 0.000000
-tztab[@logindx].t[8] = 0.000000
-tztab[@logindx].t[9] = 0.000000
-tztab[@logindx].t[10] = 0.000000
-tztab[@logindx].f[0] = -10.000000
-tztab[@logindx].f[1] = -5.000000
-tztab[@logindx].f[2] = 0.000000
-tztab[@logindx].f[3] = 5.000000
-tztab[@logindx].f[4] = 10.000000
-tztab[@logindx].f[5] = 0.000000
-tztab[@logindx].f[6] = 0.000000
-tztab[@logindx].f[7] = 0.000000
-tztab[@logindx].f[8] = 0.000000
-tztab[@logindx].f[9] = 0.000000
-tztab[@logindx].f[10] = 0.000000
-
-@logindx = casepar[0].nztab
-@ret = ins("tztab", @logindx-1, 1)
-tztab[@logindx].ta =  
-tztab[@logindx].extnum = 44
-tztab[@logindx].t[0] = 1
-tztab[@logindx].t[1] = 1.383300
-tztab[@logindx].t[2] = 1.194400
-tztab[@logindx].t[3] = 1.072000
-tztab[@logindx].t[4] = 1.000000
-tztab[@logindx].t[5] = 1.038900
-tztab[@logindx].t[6] = 1.005600
-tztab[@logindx].t[7] = 1.000000
-tztab[@logindx].t[8] = 1.077800
-tztab[@logindx].t[9] = 1.238900
-tztab[@logindx].t[10] = 1.366700
-tztab[@logindx].f[0] = -31.000000
-tztab[@logindx].f[1] = -19.799999
-tztab[@logindx].f[2] = -10.000000
-tztab[@logindx].f[3] = 0.000000
-tztab[@logindx].f[4] = 10.000000
-tztab[@logindx].f[5] = 21.799999
-tztab[@logindx].f[6] = 33.099998
-tztab[@logindx].f[7] = 45.500000
-tztab[@logindx].f[8] = 56.900002
-tztab[@logindx].f[9] = 68.599998
-tztab[@logindx].f[10] = 80.000000
-
-@logindx = casepar[0].nztab
-@ret = ins("tztab", @logindx-1, 1)
-tztab[@logindx].ta =  
-tztab[@logindx].extnum = 54
-tztab[@logindx].t[0] = 1
-tztab[@logindx].t[1] = 1.326000
-tztab[@logindx].t[2] = 1.251700
-tztab[@logindx].t[3] = 1.174000
-tztab[@logindx].t[4] = 1.116200
-tztab[@logindx].t[5] = 1.042300
-tztab[@logindx].t[6] = 1.000000
-tztab[@logindx].t[7] = 1.054800
-tztab[@logindx].t[8] = 1.117500
-tztab[@logindx].t[9] = 1.177800
-tztab[@logindx].t[10] = 1.250600
-tztab[@logindx].f[0] = -79.199997
-tztab[@logindx].f[1] = -68.599998
-tztab[@logindx].f[2] = -54.200001
-tztab[@logindx].f[3] = -37.599998
-tztab[@logindx].f[4] = -19.299999
-tztab[@logindx].f[5] = 0.000000
-tztab[@logindx].f[6] = 19.299999
-tztab[@logindx].f[7] = 37.599998
-tztab[@logindx].f[8] = 54.200001
-tztab[@logindx].f[9] = 68.599998
-tztab[@logindx].f[10] = 79.199997
-
-@logindx = casepar[0].nztab
-@ret = ins("tztab", @logindx-1, 1)
-tztab[@logindx].ta =  
-tztab[@logindx].extnum = 61
-tztab[@logindx].t[0] = 1
-tztab[@logindx].t[1] = 1.552790
-tztab[@logindx].t[2] = 1.329190
-tztab[@logindx].t[3] = 1.157760
-tztab[@logindx].t[4] = 1.043480
-tztab[@logindx].t[5] = 1.000000
-tztab[@logindx].t[6] = 1.043480
-tztab[@logindx].t[7] = 1.157760
-tztab[@logindx].t[8] = 1.329190
-tztab[@logindx].t[9] = 1.552790
-tztab[@logindx].t[10] = 0.000000
-tztab[@logindx].f[0] = -30.129999
-tztab[@logindx].f[1] = -22.830000
-tztab[@logindx].f[2] = -15.330000
-tztab[@logindx].f[3] = -7.700000
-tztab[@logindx].f[4] = 0.000000
-tztab[@logindx].f[5] = 7.700000
-tztab[@logindx].f[6] = 15.330000
-tztab[@logindx].f[7] = 22.830000
-tztab[@logindx].f[8] = 30.129999
-tztab[@logindx].f[9] = 0.000000
-tztab[@logindx].f[10] = 0.000000
-
-@logindx = casepar[0].nztab
-@ret = ins("tztab", @logindx-1, 1)
-tztab[@logindx].ta =  
-tztab[@logindx].extnum = 62
-tztab[@logindx].t[0] = 1
-tztab[@logindx].t[1] = 1.415200
-tztab[@logindx].t[2] = 1.239770
-tztab[@logindx].t[3] = 1.097470
-tztab[@logindx].t[4] = 1.021440
-tztab[@logindx].t[5] = 1.000000
-tztab[@logindx].t[6] = 1.054580
-tztab[@logindx].t[7] = 1.194930
-tztab[@logindx].t[8] = 1.411310
-tztab[@logindx].t[9] = 1.619880
-tztab[@logindx].t[10] = 0.000000
-tztab[@logindx].f[0] = -60.000000
-tztab[@logindx].f[1] = -53.000000
-tztab[@logindx].f[2] = -45.000000
-tztab[@logindx].f[3] = -36.000000
-tztab[@logindx].f[4] = -27.000000
-tztab[@logindx].f[5] = -18.000000
-tztab[@logindx].f[6] = -9.000000
-tztab[@logindx].f[7] = 1.000000
-tztab[@logindx].f[8] = 10.000000
-tztab[@logindx].f[9] = 0.000000
-tztab[@logindx].f[10] = 0.000000
-
-@logindx = casepar[0].nztab
-@ret = ins("tztab", @logindx-1, 1)
-tztab[@logindx].ta =  
-tztab[@logindx].extnum = 63
-tztab[@logindx].t[0] = 1
-tztab[@logindx].t[1] = 1.367680
-tztab[@logindx].t[2] = 1.276350
-tztab[@logindx].t[3] = 1.156910
-tztab[@logindx].t[4] = 1.067920
-tztab[@logindx].t[5] = 1.000000
-tztab[@logindx].t[6] = 0.981260
-tztab[@logindx].t[7] = 1.000000
-tztab[@logindx].t[8] = 1.065570
-tztab[@logindx].t[9] = 1.124120
-tztab[@logindx].t[10] = 0.000000
-tztab[@logindx].f[0] = -60.000000
-tztab[@logindx].f[1] = -53.000000
-tztab[@logindx].f[2] = -45.000000
-tztab[@logindx].f[3] = -36.000000
-tztab[@logindx].f[4] = -27.000000
-tztab[@logindx].f[5] = -18.000000
-tztab[@logindx].f[6] = -8.000000
-tztab[@logindx].f[7] = 1.000000
-tztab[@logindx].f[8] = 10.000000
-tztab[@logindx].f[9] = 0.000000
-tztab[@logindx].f[10] = 0.000000
-
-@logindx = casepar[0].nztab
-@ret = ins("tztab", @logindx-1, 1)
-tztab[@logindx].ta =  
-tztab[@logindx].extnum = 64
-tztab[@logindx].t[0] = 1
-tztab[@logindx].t[1] = 1.676530
-tztab[@logindx].t[2] = 1.338270
-tztab[@logindx].t[3] = 1.045450
-tztab[@logindx].t[4] = 0.918600
-tztab[@logindx].t[5] = 1.000000
-tztab[@logindx].t[6] = 0.918600
-tztab[@logindx].t[7] = 1.045450
-tztab[@logindx].t[8] = 1.338270
-tztab[@logindx].t[9] = 1.676530
-tztab[@logindx].t[10] = 0.000000
-tztab[@logindx].f[0] = -74.820000
-tztab[@logindx].f[1] = -59.680000
-tztab[@logindx].f[2] = -41.849998
-tztab[@logindx].f[3] = -21.650000
-tztab[@logindx].f[4] = 0.000000
-tztab[@logindx].f[5] = 21.650000
-tztab[@logindx].f[6] = 41.849998
-tztab[@logindx].f[7] = 59.680000
-tztab[@logindx].f[8] = 74.820000
-tztab[@logindx].f[9] = 0.000000
-tztab[@logindx].f[10] = 0.000000
-
-@logindx = casepar[0].nztab
-@ret = ins("tztab", @logindx-1, 1)
-tztab[@logindx].ta =  
-tztab[@logindx].extnum = 66
-tztab[@logindx].t[0] = 1
-tztab[@logindx].t[1] = 1.479000
-tztab[@logindx].t[2] = 1.280000
-tztab[@logindx].t[3] = 1.132000
-tztab[@logindx].t[4] = 1.035000
-tztab[@logindx].t[5] = 1.000000
-tztab[@logindx].t[6] = 1.037000
-tztab[@logindx].t[7] = 1.136000
-tztab[@logindx].t[8] = 1.284000
-tztab[@logindx].t[9] = 1.481000
-tztab[@logindx].t[10] = 0.000000
-tztab[@logindx].f[0] = -30.000000
-tztab[@logindx].f[1] = -22.740000
-tztab[@logindx].f[2] = -15.270000
-tztab[@logindx].f[3] = -7.670000
-tztab[@logindx].f[4] = 0.000000
-tztab[@logindx].f[5] = 7.670000
-tztab[@logindx].f[6] = 15.270000
-tztab[@logindx].f[7] = 22.790001
-tztab[@logindx].f[8] = 30.000000
-tztab[@logindx].f[9] = 0.000000
-tztab[@logindx].f[10] = 0.000000
-
-@logindx = casepar[0].nztab
-@ret = ins("tztab", @logindx-1, 1)
-tztab[@logindx].ta =  
-tztab[@logindx].extnum = 94
-tztab[@logindx].t[0] = 1
-tztab[@logindx].t[1] = 1.920000
-tztab[@logindx].t[2] = 1.410000
-tztab[@logindx].t[3] = 1.176000
-tztab[@logindx].t[4] = 1.347000
-tztab[@logindx].t[5] = 1.304000
-tztab[@logindx].t[6] = 1.112000
-tztab[@logindx].t[7] = 1.020000
-tztab[@logindx].t[8] = 0.000000
-tztab[@logindx].t[9] = 0.000000
-tztab[@logindx].t[10] = 0.000000
-tztab[@logindx].f[0] = -22.000000
-tztab[@logindx].f[1] = -15.000000
-tztab[@logindx].f[2] = -11.000000
-tztab[@logindx].f[3] = -10.900000
-tztab[@logindx].f[4] = -10.000000
-tztab[@logindx].f[5] = -5.000000
-tztab[@logindx].f[6] = 1.000000
-tztab[@logindx].f[7] = 0.000000
-tztab[@logindx].f[8] = 0.000000
-tztab[@logindx].f[9] = 0.000000
-tztab[@logindx].f[10] = 0.000000
-
-@logtable = 94
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 20
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 21
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 22
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 23
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 25
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 29
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 31
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 32
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 35
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 44
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 54
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 61
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 62
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 63
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 64
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 66
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logtable = 95
-@logindx = rec_index(0, 19, @logtable, -1, "  ", 0, -1)
-if (@logindx != -1)
-  @ret = del("tztab", @logindx, 1)
-endif
-
-@logfrom = 134      /*  Valencia Power LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Valencia Power, LLC             "      /*  "Valencia Power LLC"  */
-endif
-
-@logfrom = 144      /*  Kumeyaay Wind LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Kumeyaay Wind, LLC              "      /*  "Kumeyaay Wind LLC"  */
-endif
-
-@logfrom = 145      /*  MMC Escondido LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "MMC Escondido, LLC              "      /*  "MMC Escondido LLC"  */
-endif
-
-@logfrom = 146      /*  MMC Chula Vista LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "MMC Chula Vista, LLC            "      /*  "MMC Chula Vista LLC"  */
-endif
-
-@logfrom = 164      /*  CP Kelco US Inc.  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "CP Kelco US, Inc.               "      /*  "CP Kelco US Inc."  */
-endif
-
-@logfrom = 165      /*  City of Escondido  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Escondido, City of              "      /*  "City of Escondido"  */
-endif
-
-@logfrom = 184      /*  Nevada Sun-Peak LP  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Nevada Sun-Peak,LP              "      /*  "Nevada Sun-Peak LP"  */
-endif
-
-@logfrom = 190      /*  Agua Caliente Solar LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Agua Caliente Solar, LLC        "      /*  "Agua Caliente Solar LLC"  */
-endif
-
-@logfrom = 191      /*  Drew Solar LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Drew Solar, LLC                 "      /*  "Drew Solar LLC"  */
-endif
-
-@logfrom = 192      /*  Gateway Energy Storage LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Gateway Energy Storage, LLC     "      /*  "Gateway Energy Storage LLC"  */
-endif
-
-@logfrom = 193      /*  LeConte Energy Storage LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "LeConte Energy Storage, LLC     "      /*  "LeConte Energy Storage LLC"  */
-endif
-
-@logfrom = 194      /*  Valley Center ESS LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Valley Center ESS, LLC          "      /*  "Valley Center ESS LLC"  */
-endif
-
-@logfrom = 206      /*  Carlsbad Energy Center LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Carlsbad Energy Center, LLC     "      /*  "Carlsbad Energy Center LLC"  */
-endif
-
-@logfrom = 339      /*  Hatchet Ridge Wind LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Hatchet Ridge Wind, LLC         "      /*  "Hatchet Ridge Wind LLC"  */
-endif
-
-@logfrom = 426      /*  Hermiston Generating Company LP  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Hermiston Generating Company, LP"      /*  "Hermiston Generating Company LP"  */
-endif
-
-@logfrom = 448      /*  Rathdrum Power LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Rathdrum Power, LLC             "      /*  "Rathdrum Power LLC"  */
-endif
-
-@logfrom = 457      /*  Coyote Springs 2 LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Coyote Springs 2, LLC           "      /*  "Coyote Springs 2 LLC"  */
-endif
-
-@logfrom = 458      /*  Frederickson Power LLP  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Frederickson Power, LLP         "      /*  "Frederickson Power LLP"  */
-endif
-
-@logfrom = 460      /*  TransAlta-Centralia Gen LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "TransAlta-Centralia Gen, LLC    "      /*  "TransAlta-Centralia Gen LLC"  */
-endif
-
-@logfrom = 464      /*  Goldendale Energy Inc.  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Goldendale Energy, Inc.         "      /*  "Goldendale Energy Inc."  */
-endif
-
-@logfrom = 465      /*  Duke Energy Inc.  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Duke Energy, Inc.               "      /*  "Duke Energy Inc."  */
-endif
-
-@logfrom = 466      /*  Enron Energy Inc.  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Enron Energy, Inc.              "      /*  "Enron Energy Inc."  */
-endif
-
-@logfrom = 469      /*  Newport Northwest LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Newport Northwest, LLC          "      /*  "Newport Northwest LLC"  */
-endif
-
-@logfrom = 472      /*  Condon Wind Power LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Condon Wind Power, LLC          "      /*  "Condon Wind Power LLC"  */
-endif
-
-@logfrom = 480      /*  Plymouth Energy LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Plymouth Energy, LLC            "      /*  "Plymouth Energy LLC"  */
-endif
-
-@logfrom = 483      /*  Peoples Energy Resource Corp  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "People's Energy Resource Corp   "      /*  "Peoples Energy Resource Corp"  */
-endif
-
-@logfrom = 484      /*  Blue Sky Wind LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Blue Sky Wind, LLC              "      /*  "Blue Sky Wind LLC"  */
-endif
-
-@logfrom = 496      /*  Bonners Ferry City of  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Bonners Ferry, City of          "      /*  "Bonners Ferry City of"  */
-endif
-
-@logfrom = 503      /*  Delta Power Company LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Delta Power Company, LLC        "      /*  "Delta Power Company LLC"  */
-endif
-
-@logfrom = 610      /*  Norco Inc.  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Norco, Inc.                     "      /*  "Norco Inc."  */
-endif
-
-@logfrom = 647      /*  WestRock CP LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "WestRock CP, LLC                "      /*  "WestRock CP LLC"  */
-endif
-
-@logfrom = 773      /*  Colorado Highland Wind LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Colorado Highland Wind, LLC     "      /*  "Colorado Highland Wind LLC"  */
-endif
-
-@logfrom = 919      /*  Del Ranch LP  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Del Ranch, LP                   "      /*  "Del Ranch LP"  */
-endif
-
-@logfrom = 921      /*  Elk Hills Power LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Elk Hills Power, LLC            "      /*  "Elk Hills Power LLC"  */
-endif
-
-@logfrom = 922      /*  Elmore LP  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Elmore, LP                      "      /*  "Elmore LP"  */
-endif
-
-@logfrom = 928      /*  Gila River Power LP  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Gila River Power, LP            "      /*  "Gila River Power LP"  */
-endif
-
-@logfrom = 931      /*  GWF Power System LP  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "GWF Power System, LP            "      /*  "GWF Power System LP"  */
-endif
-
-@logfrom = 933      /*  Happy Jack Windpower LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Happy Jack Windpower, LLC       "      /*  "Happy Jack Windpower LLC"  */
-endif
-
-@logfrom = 938      /*  KES - Kingsburg LP  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "KES - Kingsburg, LP             "      /*  "KES - Kingsburg LP"  */
-endif
-
-@logfrom = 941      /*  Leathers LP  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Leathers, LP                    "      /*  "Leathers LP"  */
-endif
-
-@logfrom = 942      /*  Madera Power LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Madera Power, LLC               "      /*  "Madera Power LLC"  */
-endif
-
-@logfrom = 949      /*  Mirant Delta LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Mirant Delta, LLC               "      /*  "Mirant Delta LLC"  */
-endif
-
-@logfrom = 954      /*  North American Power Group LTD  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "North American Power Group, LTD "      /*  "North American Power Group LTD"  */
-endif
-
-@logfrom = 955      /*  OrHeber 2 Inc.  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "OrHeber 2, Inc.                 "      /*  "OrHeber 2 Inc."  */
-endif
-
-@logfrom = 958      /*  Plains End II LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Plains End II, LLC              "      /*  "Plains End II LLC"  */
-endif
-
-@logfrom = 959      /*  Plains End LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Plains End, LLC                 "      /*  "Plains End LLC"  */
-endif
-
-@logfrom = 967      /*  Salton Sea Power Generation LP  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Salton Sea Power Generation, LP "      /*  "Salton Sea Power Generation LP"  */
-endif
-
-@logfrom = 968      /*  Salton Sea Power LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Salton Sea Power, LLC           "      /*  "Salton Sea Power LLC"  */
-endif
-
-@logfrom = 969      /*  San Joaquin Cogen LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "San Joaquin Cogen, LLC          "      /*  "San Joaquin Cogen LLC"  */
-endif
-
-@logfrom = 975      /*  Sunray Energy Inc  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Sunray Energy, Inc              "      /*  "Sunray Energy Inc"  */
-endif
-
-@logfrom = 978      /*  SWG Colorado LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "SWG Colorado, LLC               "      /*  "SWG Colorado LLC"  */
-endif
-
-@logfrom = 980      /*  Terra-Gen Dixie Valley LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Terra-Gen Dixie Valley, LLC     "      /*  "Terra-Gen Dixie Valley LLC"  */
-endif
-
-@logfrom = 983      /*  Thermo Power and Electric LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Thermo Power and Electric, LLC  "      /*  "Thermo Power and Electric LLC"  */
-endif
-
-@logfrom = 985      /*  Tuolumne Wind Project LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Tuolumne Wind Project, LLC      "      /*  "Tuolumne Wind Project LLC"  */
-endif
-
-@logfrom = 992      /*  White Creek Wind I LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "White Creek Wind I, LLC         "      /*  "White Creek Wind I LLC"  */
-endif
-
-@logfrom = 998      /*  2Morrow Energy LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "2Morrow Energy, LLC             "      /*  "2Morrow Energy LLC"  */
-endif
-
-@logfrom = 1002      /*  Energia Sierra Juarez LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Energia Sierra Juarez, LLC      "      /*  "Energia Sierra Juarez LLC"  */
-endif
-
-@logfrom = 1010      /*  Pattern Energy Group LP  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Pattern Energy Group, LP        "      /*  "Pattern Energy Group LP"  */
-endif
-
-@logfrom = 1400      /*  Alcoa Inc.  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Alcoa, Inc.                     "      /*  "Alcoa Inc."  */
-endif
-
-@logfrom = 1443      /*  United Electric Co-op Inc.  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "United Electric Co-op, Inc.     "      /*  "United Electric Co-op Inc."  */
-endif
-
-@logfrom = 1452      /*  City of Drain  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Drain, City of                  "      /*  "City of Drain"  */
-endif
-
-@logfrom = 2410      /*  Fountain Valley Power LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Fountain Valley Power, LLC      "      /*  "Fountain Valley Power LLC"  */
-endif
-
-@logfrom = 2411      /*  Harbor Cogeneration Company LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Harbor Cogeneration Company, LLC"      /*  "Harbor Cogeneration Company LLC"  */
-endif
-
-@logfrom = 2412      /*  High Desert Power Project LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "High Desert Power Project, LLC  "      /*  "High Desert Power Project LLC"  */
-endif
-
-@logfrom = 2413      /*  Indigo Generation LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Indigo Generation, LLC          "      /*  "Indigo Generation LLC"  */
-endif
-
-@logfrom = 3008      /*  Panoche Energy Center LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Panoche Energy Center, LLC      "      /*  "Panoche Energy Center LLC"  */
-endif
-
-@logfrom = 3011      /*  Sundevil Power Holdings LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  owner[@logindx].name = "Sundevil Power Holdings, LLC    "      /*  "Sundevil Power Holdings LLC"  */
-endif
-
-@logfrom = 151      /*  Lighthouse Renewables Corp  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  @ret = del("owner", @logindx, 1)
-endif
-
-@logfrom = 176      /*  Open Mountain Energy  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  @ret = del("owner", @logindx, 1)
-endif
-
-@logfrom = 177      /*  AES Renewables  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  @ret = del("owner", @logindx, 1)
-endif
-
-@logfrom = 210      /*  DCR Transmission L.L.C.  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  @ret = del("owner", @logindx, 1)
-endif
-
-@logfrom = 273      /*  United Power  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  @ret = del("owner", @logindx, 1)
-endif
-
-@logfrom = 512      /*  OWNER512  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  @ret = del("owner", @logindx, 1)
-endif
-
-@logfrom = 635      /*  Vigilante Elec(Montana)  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  @ret = del("owner", @logindx, 1)
-endif
-
-@logfrom = 641      /*  OWNER641  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  @ret = del("owner", @logindx, 1)
-endif
-
-@logfrom = 820      /*  Sunzia  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  @ret = del("owner", @logindx, 1)
-endif
-
-@logfrom = 821      /*  Ravalli Elec(Montana)  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  @ret = del("owner", @logindx, 1)
-endif
-
-@logfrom = 1478      /*  Goose Prairie Solar LLC  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  @ret = del("owner", @logindx, 1)
-endif
-
-@logfrom = 1479      /*  Pacific Marine Energy Center  */
-@logindx = rec_index(1, 16, @logfrom, -1, " ", 0, -1)
-if (@logindx != -1)
-  @ret = del("owner", @logindx, 1)
-endif
-
-@logindx = dcnumber("MET_VSC      320.00")
-if (@logindx != -1)
-  @ret = del("dcb", @logindx, 1)
-endif
-
-@logindx = dcnumber("SANJB_VSC    320.00")
-if (@logindx != -1)
-  @ret = del("dcb", @logindx, 1)
-endif
-
-@logindx = dcnumber("NEWARK_VSC   320.00")
-if (@logindx != -1)
-  @ret = del("dcb", @logindx, 1)
-endif
-
-@logindx = dcnumber("NRC_VSC      320.00")
-if (@logindx != -1)
-  @ret = del("dcb", @logindx, 1)
-endif
-
-@logindx = number(" 700004 24_5_G         0.48")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700005 24_5_G_1      34.50")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700006 PI_2024_5     69.00")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700007 24_5_G_2      34.50")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700021 24_18_SB12   230.00")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700022 24_18_SB1     34.50")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700023 24_18_SB2     34.50")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700024 24_18_S1_1    34.50")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700025 24_18_S1       0.66")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700026 24_18_B1_1    34.50")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700027 24_18_B1       0.70")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700028 24_18_S2_1    34.50")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700029 24_18_S2       0.66")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700030 24_18_B2_1    34.50")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700031 24_18_B2       0.70")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700097 PI_2024_11   345.00")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700098 24_11_B_2     34.50")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700099 24_11_B_1     34.50")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700100 24_11_B        0.66")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700218 24_8_SB_1    115.00")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700219 24_8_SB       34.50")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700220 24_8_S_1      34.50")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700221 24_8_B_1      34.50")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700222 24_8_S         0.63")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700223 24_8_B         0.43")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-@logindx = number(" 700224 PI_2024_8    115.00")
-if (@logindx != -1)
-  @ret = del("busd", @logindx, 1)
-  @ret = del("volt", @logindx, 1)
-endif
-
-mispar[0].iordfl = 0       /* Initiate a bus re-order */
-
-end
