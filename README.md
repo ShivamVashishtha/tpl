@@ -1,20 +1,21 @@
-Deleted branch from   70358 "RIFLE_PS    " 230.00 to       0 "            "   0.00 ckt 1  section 1Original no. of off diagonals =  68044
 
-No of buses, matrix order =  30463  29432
+Saved case in file [C:\Users\317521\WECC 2031-32\Progress\32HS2_Step04_Extract.sav], Time is: Wed Jan 28 22:35:13 2026
+
+
+Transformer paralleled by a jumper from 66635 to 67438
+Original no. of off diagonals =  68042
+
+No of buses, matrix order =  30463  29431
          0 sec. in ordrx at start of main ordering loop
 ..........................
 Number of buses                         30463
-Number of effective branches              35739
-Number of triangularized matrix elements  52801
+Number of effective branches              35737
+Number of triangularized matrix elements  52544
 
          1 sec. at end of ordrx
 Beginning solution
+Transformer paralleled by a jumper from 66635 to 67438
 
-  66635 W CEDAR      138.00  67438 WCEDREG      138.00losed Island
-Buses in the island:
-   67438    67193    67261    68017    66016    65207    66017    66018    65208 
-If any buses were type 0 in the island before re-closing,
-type changed to 1 for load bus and 2 for generator bus.
   64094 SLVER PK      57.50  64096 SLVR PS       57.50losed Island
 Buses in the island:
    64094 
@@ -26,11 +27,11 @@ Buses in the island:
 If any buses were type 0 in the island before re-closing,
 type changed to 1 for load bus and 2 for generator bus.
 
-Excessive voltage or angle change (          nan          nan ) ignored at bus
-  64056 GONDER       230.00Excessive voltage or angle change (    -nan(ind)    -nan(ind) ) ignored at bus
+Excessive voltage or angle change (    -nan(ind)    -nan(ind) ) ignored at bus
   48037 BENEWAH      230.00Excessive voltage or angle change (          nan          nan ) ignored at bus
-  45327 WALAWALA     230.00Excessive voltage or angle change (    -nan(ind)    -nan(ind) ) ignored at bus
-  40488 GRIZZLY_R3   500.00
+  40938 SANTIAM_E    230.00Excessive voltage or angle change (          nan          nan ) ignored at bus
+  73028 BOYSEN       115.00Excessive voltage or angle change (          nan          nan ) ignored at bus
+  40699 MARION       500.00
 It -P-error- --Bus-- ----Name---- --Kv-- area -Q-error- --Bus-- ----Name---- --Kv-- area
    -delta-A- --Bus-- ----Name---- --Kv-- area -delta-V- --Bus-- ----Name---- --Kv-- area
 
