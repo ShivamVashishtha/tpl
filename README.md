@@ -1,4 +1,6 @@
 Regulatory	MODELED	MILESTONE	GI-	PROJECT NAME	ISD (YYYY)	MON	TOPOLOGY	NOTES
+<img width="1699" height="20" alt="image" src="https://github.com/user-attachments/assets/477b65f3-c9c7-4848-8b37-112b4d0d77e5" />
+
 
 ERP Approved Portfolio		Withdrawn		PI-2024-5 Alamosa Energy Center	2026	MAR		"See '26MAR31 PI_24_5 5RSC_24_3 ATER.p'
 Bid 0011
@@ -102,3 +104,4 @@ Also in 5RSC cluster - ""5RSC-2024-11"""
 				Golden West Wind PPA Termination	2040	OCT		PPA for Golden West Wind ends. Do not dispatch after this point. 70663 W1
 				Bronco Plains PPA Termination	2045	SEP		PPA for Bronco Plains ends. Do not dispatch after this point. 70753 W1, 70749 W2
 				Mountain Breeze PPA Termination	2045	OCT		PPA for Mountain Breeze ends. Do not dispatch after this point. 70818 W1, 70817 W2
+<img width="1699" height="2879" alt="image" src="https://github.com/user-attachments/assets/1fb5128e-24e7-4902-8f66-3048ff3b840c" />
