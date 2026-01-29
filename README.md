@@ -5,16 +5,11 @@ No of buses, matrix order =  30463  29432
 ..........................
 Number of buses                         30463
 Number of effective branches              35739
-Number of triangularized matrix elements  52652
+Number of triangularized matrix elements  52899
 
          2 sec. at end of ordrx
 Beginning solution
 
-  66635 W CEDAR      138.00  67438 WCEDREG      138.00losed Island
-Buses in the island:
-   67438    67193    67261    68017    66016    65207    66017    66018    65208 
-If any buses were type 0 in the island before re-closing,
-type changed to 1 for load bus and 2 for generator bus.
   64094 SLVER PK      57.50  64096 SLVR PS       57.50losed Island
 Buses in the island:
    64094 
@@ -27,10 +22,10 @@ If any buses were type 0 in the island before re-closing,
 type changed to 1 for load bus and 2 for generator bus.
 
 Excessive voltage or angle change (          nan          nan ) ignored at bus
-  14011 MORGAN       500.00Excessive voltage or angle change (    -nan(ind)    -nan(ind) ) ignored at bus
-  15230 RUDD         230.00Excessive voltage or angle change (          nan          nan ) ignored at bus
-  18019 H ALLEN      230.00Excessive voltage or angle change (          nan          nan ) ignored at bus
-  10292 SAN_JUAN     345.00
+  40899 ROSS_W       230.00Excessive voltage or angle change (          nan          nan ) ignored at bus
+  43527 SHERWOOD     230.00Excessive voltage or angle change (          nan          nan ) ignored at bus
+  40585 JOHN_DAY     500.00Excessive voltage or angle change (          nan          nan ) ignored at bus
+  41092 TROUTDALE_E  230.00
 It -P-error- --Bus-- ----Name---- --Kv-- area -Q-error- --Bus-- ----Name---- --Kv-- area
    -delta-A- --Bus-- ----Name---- --Kv-- area -delta-V- --Bus-- ----Name---- --Kv-- area
 
